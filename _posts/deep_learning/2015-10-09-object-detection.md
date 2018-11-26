@@ -5,36 +5,37 @@ title: Object Detection
 date: 2015-10-09
 ---
 
-| Method           | backbone   | test size | VOC2007 | VOC2010 | VOC2012 | ILSVRC 2013 | MSCOCO 2015                     | Speed                          |
-| :------------:   | :-----:    | :-----:   | :-----: | :-----: | :-----: | :---------: | :---------:                     | :---------:                    |
-| OverFeat         |            |           |         |         |         | 24.3%       |                                 |                                |
-| R-CNN            | AlexNet    |           | 58.5%   | 53.7%   | 53.3%   | 31.4%       |                                 |                                |
-| R-CNN            | VGG16      |           | 66.0%   |         |         |             |                                 |                                |
-| SPP_net          | ZF-5       |           | 54.2%   |         |         | 31.84%      |                                 |                                |
-| DeepID-Net       |            |           | 64.1%   |         |         | 50.3%       |                                 |                                |
-| NoC              | 73.3%      |           | 68.8%   |         |         |             |                                 |                                |
-| Fast-RCNN        | VGG16      |           | 70.0%   | 68.8%   | 68.4%   |             | 19.7%(@[0.5-0.95]), 35.9%(@0.5) |                                |
-| MR-CNN           | 78.2%      |           | 73.9%   |         |         |             |                                 |                                |
-| Faster-RCNN      | VGG16      |           | 78.8%   |         | 75.9%   |             | 21.9%(@[0.5-0.95]), 42.7%(@0.5) | 198ms                          |
-| Faster-RCNN      | ResNet101  |           | 85.6%   |         | 83.8%   |             | 37.4%(@[0.5-0.95]), 59.0%(@0.5) |                                |
-| YOLO             |            |           | 63.4%   |         | 57.9%   |             |                                 | 45 fps                         |
-| YOLO VGG-16      |            |           | 66.4%   |         |         |             |                                 | 21 fps                         |
-| YOLOv2           |            | 448x448   | 78.6%   |         | 73.4%   |             | 21.6%(@[0.5-0.95]), 44.0%(@0.5) | 40 fps                         |
-| SSD              | VGG16      | 300x300   | 77.2%   |         | 75.8%   |             | 25.1%(@[0.5-0.95]), 43.1%(@0.5) | 46 fps                         |
-| SSD              | VGG16      | 512x512   | 79.8%   |         | 78.5%   |             | 28.8%(@[0.5-0.95]), 48.5%(@0.5) | 19 fps                         |
-| SSD              | ResNet101  | 300x300   |         |         |         |             | 28.0%(@[0.5-0.95])              | 16 fps                         |
-| SSD              | ResNet101  | 512x512   |         |         |         |             | 31.2%(@[0.5-0.95])              | 8 fps                          |
-| DSSD             | ResNet101  | 300x300   |         |         |         |             | 28.0%(@[0.5-0.95])              | 8 fps                          |
-| DSSD             | ResNet101  | 500x500   |         |         |         |             | 33.2%(@[0.5-0.95])              | 6 fps                          |
-| ION              |            |           | 79.2%   |         | 76.4%   |             |                                 |                                |
-| CRAFT            |            |           | 75.7%   |         | 71.3%   | 48.5%       |                                 |                                |
-| OHEM             |            |           | 78.9%   |         | 76.3%   |             | 25.5%(@[0.5-0.95]), 45.9%(@0.5) |                                |
-| R-FCN            | ResNet50   |           | 77.4%   |         |         |             |                                 | 0.12sec(K40), 0.09sec(TitianX) |
-| R-FCN            | ResNet101  |           | 79.5%   |         |         |             |                                 | 0.17sec(K40), 0.12sec(TitianX) |
-| R-FCN(ms train)  | ResNet101  |           | 83.6%   |         | 82.0%   |             | 31.5%(@[0.5-0.95]), 53.2%(@0.5) |                                |
-| PVANet 9.0       |            |           | 84.9%   |         | 84.2%   |             |                                 | 750ms(CPU), 46ms(TitianX)      |
-| Light-Head R-CNN | Xception\* | 800/1200  |         |         |         |             | 31.5%@[0.5:0.95]                | 95 fps                         |
-| Light-Head R-CNN | Xception\* | 700/1100  |         |         |         |             | 30.7%@[0.5:0.95]                | 102 fps                        |
+| Method           | backbone      | test size | VOC2007 | VOC2010 | VOC2012 | ILSVRC 2013 | MSCOCO 2015                     | Speed                          |
+| :------------:   | :-----:       | :-----:   | :-----: | :-----: | :-----: | :---------: | :---------:                     | :---------:                    |
+| OverFeat         |               |           |         |         |         | 24.3%       |                                 |                                |
+| R-CNN            | AlexNet       |           | 58.5%   | 53.7%   | 53.3%   | 31.4%       |                                 |                                |
+| R-CNN            | VGG16         |           | 66.0%   |         |         |             |                                 |                                |
+| SPP_net          | ZF-5          |           | 54.2%   |         |         | 31.84%      |                                 |                                |
+| DeepID-Net       |               |           | 64.1%   |         |         | 50.3%       |                                 |                                |
+| NoC              | 73.3%         |           | 68.8%   |         |         |             |                                 |                                |
+| Fast-RCNN        | VGG16         |           | 70.0%   | 68.8%   | 68.4%   |             | 19.7%(@[0.5-0.95]), 35.9%(@0.5) |                                |
+| MR-CNN           | 78.2%         |           | 73.9%   |         |         |             |                                 |                                |
+| Faster-RCNN      | VGG16         |           | 78.8%   |         | 75.9%   |             | 21.9%(@[0.5-0.95]), 42.7%(@0.5) | 198ms                          |
+| Faster-RCNN      | ResNet101     |           | 85.6%   |         | 83.8%   |             | 37.4%(@[0.5-0.95]), 59.0%(@0.5) |                                |
+| YOLO             |               |           | 63.4%   |         | 57.9%   |             |                                 | 45 fps                         |
+| YOLO VGG-16      |               |           | 66.4%   |         |         |             |                                 | 21 fps                         |
+| YOLOv2           |               | 448x448   | 78.6%   |         | 73.4%   |             | 21.6%(@[0.5-0.95]), 44.0%(@0.5) | 40 fps                         |
+| SSD              | VGG16         | 300x300   | 77.2%   |         | 75.8%   |             | 25.1%(@[0.5-0.95]), 43.1%(@0.5) | 46 fps                         |
+| SSD              | VGG16         | 512x512   | 79.8%   |         | 78.5%   |             | 28.8%(@[0.5-0.95]), 48.5%(@0.5) | 19 fps                         |
+| SSD              | ResNet101     | 300x300   |         |         |         |             | 28.0%(@[0.5-0.95])              | 16 fps                         |
+| SSD              | ResNet101     | 512x512   |         |         |         |             | 31.2%(@[0.5-0.95])              | 8 fps                          |
+| DSSD             | ResNet101     | 300x300   |         |         |         |             | 28.0%(@[0.5-0.95])              | 8 fps                          |
+| DSSD             | ResNet101     | 500x500   |         |         |         |             | 33.2%(@[0.5-0.95])              | 6 fps                          |
+| ION              |               |           | 79.2%   |         | 76.4%   |             |                                 |                                |
+| CRAFT            |               |           | 75.7%   |         | 71.3%   | 48.5%       |                                 |                                |
+| OHEM             |               |           | 78.9%   |         | 76.3%   |             | 25.5%(@[0.5-0.95]), 45.9%(@0.5) |                                |
+| R-FCN            | ResNet50      |           | 77.4%   |         |         |             |                                 | 0.12sec(K40), 0.09sec(TitianX) |
+| R-FCN            | ResNet101     |           | 79.5%   |         |         |             |                                 | 0.17sec(K40), 0.12sec(TitianX) |
+| R-FCN(ms train)  | ResNet101     |           | 83.6%   |         | 82.0%   |             | 31.5%(@[0.5-0.95]), 53.2%(@0.5) |                                |
+| PVANet 9.0       |               |           | 84.9%   |         | 84.2%   |             |                                 | 750ms(CPU), 46ms(TitianX)      |
+| RetinaNet        | ResNet101-FPN |           |         |         |         |             |                                 |                                |
+| Light-Head R-CNN | Xception\*    | 800/1200  |         |         |         |             | 31.5%@[0.5:0.95]                | 95 fps                         |
+| Light-Head R-CNN | Xception\*    | 700/1100  |         |         |         |             | 30.7%@[0.5:0.95]                | 102 fps                        |
 
 # Papers
 
@@ -108,6 +109,7 @@ date: 2015-10-09
 
 **R-CNN minus R**
 
+- intro: BMVC 2015
 - arxiv: [http://arxiv.org/abs/1506.06981](http://arxiv.org/abs/1506.06981)
 
 **Faster R-CNN in MXNet with distributed implementation and data parallelization**
@@ -138,16 +140,16 @@ date: 2015-10-09
 
 - intro: Tsinghua University & Megvii Inc
 - arxiv: [https://arxiv.org/abs/1711.07264](https://arxiv.org/abs/1711.07264)
+- github(official, Tensorflow): [https://github.com/zengarden/light_head_rcnn](https://github.com/zengarden/light_head_rcnn)
 - github: [https://github.com/terrychenism/Deformable-ConvNets/blob/master/rfcn/symbols/resnet_v1_101_rfcn_light.py#L784](https://github.com/terrychenism/Deformable-ConvNets/blob/master/rfcn/symbols/resnet_v1_101_rfcn_light.py#L784)
 
 ## Cascade R-CNN
 
 **Cascade R-CNN: Delving into High Quality Object Detection**
 
-[https://arxiv.org/abs/1712.00726](https://arxiv.org/abs/1712.00726)
-[https://github.com/zhaoweicai/cascade-rcnn](https://github.com/zhaoweicai/cascade-rcnn)
-
-- - -
+- intro: CVPR 2018. UC San Diego
+- arxiv: [https://arxiv.org/abs/1712.00726](https://arxiv.org/abs/1712.00726)
+- github(Caffe, official): [https://github.com/zhaoweicai/cascade-rcnn](https://github.com/zhaoweicai/cascade-rcnn)
 
 ## MultiBox
 
@@ -287,6 +289,11 @@ date: 2015-10-09
 - github: [https://github.com/choasUp/caffe-yolo9000](https://github.com/choasUp/caffe-yolo9000)
 - github: [https://github.com/philipperemy/yolo-9000](https://github.com/philipperemy/yolo-9000)
 
+**darknet_scripts**
+
+- intro: Auxilary scripts to work with (YOLO) darknet deep learning famework. AKA -> How to generate YOLO anchors?
+- github: [https://github.com/Jumabek/darknet_scripts](https://github.com/Jumabek/darknet_scripts)
+
 **Yolo_mark: GUI for marking bounded boxes of objects in images for training Yolo v2**
 
 - github: [https://github.com/AlexeyAB/Yolo_mark](https://github.com/AlexeyAB/Yolo_mark)
@@ -294,6 +301,23 @@ date: 2015-10-09
 **LightNet: Bringing pjreddie's DarkNet out of the shadows**
 
 [https://github.com//explosion/lightnet](https://github.com//explosion/lightnet)
+
+**YOLO v2 Bounding Box Tool**
+
+- intro: Bounding box labeler tool to generate the training data in the format YOLO v2 requires.
+- github: [https://github.com/Cartucho/yolo-boundingbox-labeler-GUI](https://github.com/Cartucho/yolo-boundingbox-labeler-GUI)
+
+## YOLOv3
+
+**YOLOv3: An Incremental Improvement**
+
+- project page: [https://pjreddie.com/darknet/yolo/](https://pjreddie.com/darknet/yolo/)
+- paper: [https://pjreddie.com/media/files/papers/YOLOv3.pdf](https://pjreddie.com/media/files/papers/YOLOv3.pdf)
+- arxiv: [https://arxiv.org/abs/1804.02767](https://arxiv.org/abs/1804.02767)
+
+**YOLO-LITE: A Real-Time Object Detection Algorithm Optimized for Non-GPU Computers**
+
+[https://arxiv.org/abs/1811.05588](https://arxiv.org/abs/1811.05588)
 
 - - -
 
@@ -343,6 +367,7 @@ date: 2015-10-09
 - intro: UNC Chapel Hill & Amazon Inc
 - arxiv: [https://arxiv.org/abs/1701.06659](https://arxiv.org/abs/1701.06659)
 - github: [https://github.com/chengyangfu/caffe/tree/dssd](https://github.com/chengyangfu/caffe/tree/dssd)
+- github: [https://github.com/MTCloudVision/mxnet-dssd](https://github.com/MTCloudVision/mxnet-dssd)
 - demo: [http://120.52.72.53/www.cs.unc.edu/c3pr90ntc0td/~cyfu/dssd_lalaland.mp4](http://120.52.72.53/www.cs.unc.edu/c3pr90ntc0td/~cyfu/dssd_lalaland.mp4)
 
 **Enhancement of SSD by concatenating feature maps for object detection**
@@ -370,6 +395,21 @@ date: 2015-10-09
 - intro: WeaveNet
 - keywords: fuse multi-scale information
 - arxiv: [https://arxiv.org/abs/1712.03149](https://arxiv.org/abs/1712.03149)
+
+## ESSD
+
+**Extend the shallow part of Single Shot MultiBox Detector via Convolutional Neural Network**
+
+[https://arxiv.org/abs/1801.05918](https://arxiv.org/abs/1801.05918)
+
+**Tiny SSD: A Tiny Single-shot Detection Deep Convolutional Neural Network for Real-time Embedded Object Detection**
+
+[https://arxiv.org/abs/1802.06488](https://arxiv.org/abs/1802.06488)
+
+**MDSSD: Multi-scale Deconvolutional Single Shot Detector for small objects**
+
+- intro: Zhengzhou University
+- arxiv: [https://arxiv.org/abs/1805.07009](https://arxiv.org/abs/1805.07009)
 
 ## Inside-Outside Net (ION)
 
@@ -673,6 +713,10 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 - arxiv: [https://arxiv.org/abs/1708.01241](https://arxiv.org/abs/1708.01241)
 - github: [https://github.com/szq0214/DSOD](https://github.com/szq0214/DSOD)
 
+**Object Detection from Scratch with Deep Supervision**
+
+[https://arxiv.org/abs/1809.09294](https://arxiv.org/abs/1809.09294)
+
 ## RetinaNet
 
 **Focal Loss for Dense Object Detection**
@@ -680,6 +724,10 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 - intro: ICCV 2017 Best student paper award. Facebook AI Research
 - keywords: RetinaNet
 - arxiv: [https://arxiv.org/abs/1708.02002](https://arxiv.org/abs/1708.02002)
+
+**Focal Loss Dense Detector for Vehicle Surveillance**
+
+[https://arxiv.org/abs/1803.01114](https://arxiv.org/abs/1803.01114)
 
 **CoupleNet: Coupling Global Structure with Local Parts for Object Detection**
 
@@ -720,6 +768,7 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 
 - arxiv: [https://arxiv.org/abs/1711.06897](https://arxiv.org/abs/1711.06897)
 - github: [https://github.com/sfzhang15/RefineDet](https://github.com/sfzhang15/RefineDet)
+- github: [https://github.com/MTCloudVision/RefineDet-Mxnet](https://github.com/MTCloudVision/RefineDet-Mxnet)
 
 **Receptive Field Block Net for Accurate and Fast Object Detection**
 
@@ -729,6 +778,7 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 
 **An Analysis of Scale Invariance in Object Detection - SNIP**
 
+- intro: CVPR 2018
 - arxiv: [https://arxiv.org/abs/1711.08189](https://arxiv.org/abs/1711.08189)
 - github: [https://github.com/bharatsingh430/snip](https://github.com/bharatsingh430/snip)
 
@@ -739,16 +789,12 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 **Learning a Rotation Invariant Detector with Rotatable Bounding Box**
 
 - arxiv: [https://arxiv.org/abs/1711.09405](https://arxiv.org/abs/1711.09405)
-- github: [https://github.com/liulei01/DRBox](https://github.com/liulei01/DRBox)
+- github(official, Caffe): [https://github.com/liulei01/DRBox](https://github.com/liulei01/DRBox)
 
 **Scalable Object Detection for Stylized Objects**
 
 - intro: Microsoft AI & Research Munich
 - arxiv: [https://arxiv.org/abs/1711.09822](https://arxiv.org/abs/1711.09822)
-
-**Relation Networks for Object Detection**
-
-[https://arxiv.org/abs/1711.11575](https://arxiv.org/abs/1711.11575)
 
 **Learning Object Detectors from Scratch with Gated Recurrent Feature Pyramids**
 
@@ -775,7 +821,260 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 - intro: Tsinghua University & JD Group
 - arxiv: [https://arxiv.org/abs/1801.01051](https://arxiv.org/abs/1801.01051)
 
-## NMS
+**Localization-Aware Active Learning for Object Detection**
+
+- arxiv: [https://arxiv.org/abs/1801.05124](https://arxiv.org/abs/1801.05124)
+
+**Object Detection with Mask-based Feature Encoding**
+
+[https://arxiv.org/abs/1802.03934](https://arxiv.org/abs/1802.03934)
+
+**LSTD: A Low-Shot Transfer Detector for Object Detection**
+
+- intro: AAAI 2018
+- arxiv: [https://arxiv.org/abs/1803.01529](https://arxiv.org/abs/1803.01529)
+
+**Domain Adaptive Faster R-CNN for Object Detection in the Wild**
+
+- intro: CVPR 2018. ETH Zurich & ESAT/PSI
+- arxiv: [https://arxiv.org/abs/1803.03243](https://arxiv.org/abs/1803.03243)
+- github(official. Caffe): [https://github.com/yuhuayc/da-faster-rcnn](https://github.com/yuhuayc/da-faster-rcnn)
+
+**Pseudo Mask Augmented Object Detection**
+
+[https://arxiv.org/abs/1803.05858](https://arxiv.org/abs/1803.05858)
+
+**Revisiting RCNN: On Awakening the Classification Power of Faster RCNN**
+
+- intro: ECCV 2018
+- keywords: DCR V1
+- arxiv: [https://arxiv.org/abs/1803.06799](https://arxiv.org/abs/1803.06799)
+- github(official, MXNet): [https://github.com/bowenc0221/Decoupled-Classification-Refinement](https://github.com/bowenc0221/Decoupled-Classification-Refinement)
+
+**Decoupled Classification Refinement: Hard False Positive Suppression for Object Detection**
+
+- keywords: DCR V2
+- arxiv: [https://arxiv.org/abs/1810.04002](https://arxiv.org/abs/1810.04002)
+- github(official, MXNet): [https://github.com/bowenc0221/Decoupled-Classification-Refinement](https://github.com/bowenc0221/Decoupled-Classification-Refinement)
+
+**Learning Region Features for Object Detection**
+
+- intro: Peking University & MSRA
+- arxiv: [https://arxiv.org/abs/1803.07066](https://arxiv.org/abs/1803.07066)
+
+**Single-Shot Bidirectional Pyramid Networks for High-Quality Object Detection**
+
+- intro: Singapore Management University & Zhejiang University
+- arxiv: [https://arxiv.org/abs/1803.08208](https://arxiv.org/abs/1803.08208)
+
+**Object Detection for Comics using Manga109 Annotations**
+
+- intro: University of Tokyo & National Institute of Informatics, Japan
+- arxiv: [https://arxiv.org/abs/1803.08670](https://arxiv.org/abs/1803.08670)
+
+**Task-Driven Super Resolution: Object Detection in Low-resolution Images**
+
+[https://arxiv.org/abs/1803.11316](https://arxiv.org/abs/1803.11316)
+
+**Transferring Common-Sense Knowledge for Object Detection**
+
+[https://arxiv.org/abs/1804.01077](https://arxiv.org/abs/1804.01077)
+
+**Multi-scale Location-aware Kernel Representation for Object Detection**
+
+- intro: CVPR 2018
+- arxiv: [https://arxiv.org/abs/1804.00428](https://arxiv.org/abs/1804.00428)
+- github: [https://github.com/Hwang64/MLKP](https://github.com/Hwang64/MLKP)
+
+**Loss Rank Mining: A General Hard Example Mining Method for Real-time Detectors**
+
+- intro: National University of Defense Technology
+- arxiv: [https://arxiv.org/abs/1804.04606](https://arxiv.org/abs/1804.04606)
+
+**DetNet: A Backbone network for Object Detection**
+
+- intro: Tsinghua University & Megvii Inc
+- arxiv: [https://arxiv.org/abs/1804.06215](https://arxiv.org/abs/1804.06215)
+
+**Robust Physical Adversarial Attack on Faster R-CNN Object Detector**
+
+[https://arxiv.org/abs/1804.05810](https://arxiv.org/abs/1804.05810)
+
+**AdvDetPatch: Attacking Object Detectors with Adversarial Patches**
+
+[https://arxiv.org/abs/1806.02299](https://arxiv.org/abs/1806.02299)
+
+**Attacking Object Detectors via Imperceptible Patches on Background**
+
+[https://arxiv.org/abs/1809.05966](https://arxiv.org/abs/1809.05966)
+
+**Physical Adversarial Examples for Object Detectors**
+
+- intro: WOOT 2018
+- arxiv: [https://arxiv.org/abs/1807.07769](https://arxiv.org/abs/1807.07769)
+
+**Quantization Mimic: Towards Very Tiny CNN for Object Detection**
+
+[https://arxiv.org/abs/1805.02152](https://arxiv.org/abs/1805.02152)
+
+**Object detection at 200 Frames Per Second**
+
+- intro: United Technologies Research Center-Ireland
+- arxiv: [https://arxiv.org/abs/1805.06361](https://arxiv.org/abs/1805.06361)
+
+**Object Detection using Domain Randomization and Generative Adversarial Refinement of Synthetic Images**
+
+- intro: CVPR 2018 Deep Vision Workshop
+- arxiv: [https://arxiv.org/abs/1805.11778](https://arxiv.org/abs/1805.11778)
+
+**SNIPER: Efficient Multi-Scale Training**
+
+- arxiv: [https://arxiv.org/abs/1805.09300](https://arxiv.org/abs/1805.09300)
+- github: [https://github.com/mahyarnajibi/SNIPER](https://github.com/mahyarnajibi/SNIPER)
+
+**Soft Sampling for Robust Object Detection**
+
+[https://arxiv.org/abs/1806.06986](https://arxiv.org/abs/1806.06986)
+
+**MetaAnchor: Learning to Detect Objects with Customized Anchors**
+
+- intro: Megvii Inc (Face++) & Fudan University
+- arxiv: [https://arxiv.org/abs/1807.00980](https://arxiv.org/abs/1807.00980)
+
+**Localization Recall Precision (LRP): A New Performance Metric for Object Detection**
+
+- intro: ECCV 2018. Middle East Technical University
+- arxiv: [https://arxiv.org/abs/1807.01696](https://arxiv.org/abs/1807.01696)
+- github: [https://github.com/cancam/LRP](https://github.com/cancam/LRP)
+
+**Auto-Context R-CNN**
+
+- intro: Rejected by ECCV18
+- arxiv: [https://arxiv.org/abs/1807.02842](https://arxiv.org/abs/1807.02842)
+
+**Pooling Pyramid Network for Object Detection**
+
+- intro: Google AI Perception
+- arxiv: [https://arxiv.org/abs/1807.03284](https://arxiv.org/abs/1807.03284)
+
+**Modeling Visual Context is Key to Augmenting Object Detection Datasets**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1807.07428](https://arxiv.org/abs/1807.07428)
+
+**Dual Refinement Network for Single-Shot Object Detection**
+
+[https://arxiv.org/abs/1807.08638](https://arxiv.org/abs/1807.08638)
+
+**Acquisition of Localization Confidence for Accurate Object Detection**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1807.11590](https://arxiv.org/abs/1807.11590)
+- gihtub: [https://github.com/vacancy/PreciseRoIPooling](https://github.com/vacancy/PreciseRoIPooling)
+
+**CornerNet: Detecting Objects as Paired Keypoints**
+
+- intro: ECCV 2018
+- keywords: IoU-Net, PreciseRoIPooling
+- arxiv: [https://arxiv.org/abs/1808.01244](https://arxiv.org/abs/1808.01244)
+- github: [https://github.com/umich-vl/CornerNet](https://github.com/umich-vl/CornerNet)
+
+**Unsupervised Hard Example Mining from Videos for Improved Object Detection**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1808.04285](https://arxiv.org/abs/1808.04285)
+
+**SAN: Learning Relationship between Convolutional Features for Multi-Scale Object Detection**
+
+[https://arxiv.org/abs/1808.04974](https://arxiv.org/abs/1808.04974)
+
+**A Survey of Modern Object Detection Literature using Deep Learning**
+
+[https://arxiv.org/abs/1808.07256](https://arxiv.org/abs/1808.07256)
+
+**Tiny-DSOD: Lightweight Object Detection for Resource-Restricted Usages**
+
+- intro: BMVC 2018
+- arxiv: [https://arxiv.org/abs/1807.11013](https://arxiv.org/abs/1807.11013)
+- github: [https://github.com/lyxok1/Tiny-DSOD](https://github.com/lyxok1/Tiny-DSOD)
+
+**Deep Feature Pyramid Reconfiguration for Object Detection**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1808.07993](https://arxiv.org/abs/1808.07993)
+
+**MDCN: Multi-Scale, Deep Inception Convolutional Neural Networks for Efficient Object Detection**
+
+- intro: ICPR 2018
+- arxiv: [https://arxiv.org/abs/1809.01791](https://arxiv.org/abs/1809.01791)
+
+**Recent Advances in Object Detection in the Age of Deep Convolutional Neural Networks**
+
+[https://arxiv.org/abs/1809.03193](https://arxiv.org/abs/1809.03193)
+
+**Deep Learning for Generic Object Detection: A Survey**
+
+[https://arxiv.org/abs/1809.02165](https://arxiv.org/abs/1809.02165)
+
+**Training Confidence-Calibrated Classifier for Detecting Out-of-Distribution Samples**
+
+- intro: ICLR 2018
+- arxiv: [https://github.com/alinlab/Confident_classifier](https://github.com/alinlab/Confident_classifier)
+
+**ScratchDet:Exploring to Train Single-Shot Object Detectors from Scratch**
+
+- arxiv: [https://arxiv.org/abs/1810.08425](https://arxiv.org/abs/1810.08425)
+- github: [https://github.com/KimSoybean/ScratchDet](https://github.com/KimSoybean/ScratchDethttps://github.com/KimSoybean/ScratchDet)
+
+**Fast and accurate object detection in high resolution 4K and 8K video using GPUs**
+
+- intro: Best Paper Finalist at IEEE High Performance Extreme Computing Conference (HPEC) 2018
+- intro: Carnegie Mellon University
+- arxiv: [https://arxiv.org/abs/1810.10551](https://arxiv.org/abs/1810.10551)
+
+**Hybrid Knowledge Routed Modules for Large-scale Object Detection**
+
+- intro: NIPS 2018
+- arxiv: [https://arxiv.org/abs/1810.12681](https://arxiv.org/abs/1810.12681)
+- github(official, PyTorch): [https://github.com/chanyn/HKRM](https://github.com/chanyn/HKRM)
+
+**Gradient Harmonized Single-stage Detector**
+
+- intro: AAAI 2019
+- arxiv: [https://arxiv.org/abs/1811.05181](https://arxiv.org/abs/1811.05181)
+
+**M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network**
+
+- intro: AAAI 2019
+- arxiv: [https://arxiv.org/abs/1811.04533](https://arxiv.org/abs/1811.04533)
+- github: [https://github.com/qijiezhao/M2Det](https://github.com/qijiezhao/M2Det)
+
+**BAN: Focusing on Boundary Context for Object Detection**
+
+[https://arxiv.org/abs/1811.05243](https://arxiv.org/abs/1811.05243)
+
+**Multi-layer Pruning Framework for Compressing Single Shot MultiBox Detector**
+
+- intro: WACV 2019
+- arxiv: [https://arxiv.org/abs/1811.08342](https://arxiv.org/abs/1811.08342)
+
+**R2CNN++: Multi-Dimensional Attention Based Rotation Invariant Detector with Robust Anchor Strategy**
+
+- arxiv: [https://arxiv.org/abs/1811.07126](https://arxiv.org/abs/1811.07126)
+- github: [https://github.com/DetectionTeamUCAS/R2CNN-Plus-Plus_Tensorflow](https://github.com/DetectionTeamUCAS/R2CNN-Plus-Plus_Tensorflow)
+
+**DeRPN: Taking a further step toward more general object detection**
+
+- intro: AAAI 2019
+- intro: South China University of Technology
+- ariv: [https://arxiv.org/abs/1811.06700](https://arxiv.org/abs/1811.06700)
+- github: [https://github.com/HCIILAB/DeRPN](https://github.com/HCIILAB/DeRPN)
+
+**Fast Efficient Object Detection Using Selective Attention**
+
+[https://arxiv.org/abs/1811.07502](https://arxiv.org/abs/1811.07502)
+
+# Non-Maximum Suppression (NMS)
 
 **End-to-End Integration of a Convolutional Network, Deformable Parts Model and Non-Maximum Suppression**
 
@@ -796,11 +1095,26 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 - arxiv: [https://arxiv.org/abs/1704.04503](https://arxiv.org/abs/1704.04503)
 - github: [https://github.com/bharatsingh430/soft-nms](https://github.com/bharatsingh430/soft-nms)
 
+**Softer-NMS: Rethinking Bounding Box Regression for Accurate Object Detection**
+
+- intro: CMU & Megvii Inc. (Face++)
+- arxiv: [https://arxiv.org/abs/1809.08545](https://arxiv.org/abs/1809.08545)
+- github: [https://github.com/yihui-he/softer-NMS](https://github.com/yihui-he/softer-NMS)
+
 **Learning non-maximum suppression**
 
-[https://arxiv.org/abs/1705.02950](https://arxiv.org/abs/1705.02950)
+- intro: CVPR 2017
+- project page: [https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/object-recognition-and-scene-understanding/learning-nms/](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/object-recognition-and-scene-understanding/learning-nms/)
+- arxiv: [https://arxiv.org/abs/1705.02950](https://arxiv.org/abs/1705.02950)
+- github: [https://github.com/hosang/gossipnet](https://github.com/hosang/gossipnet)
 
-## Adversarial Examples
+**Relation Networks for Object Detection**
+
+- intro: CVPR 2018 oral
+- arxiv: [https://arxiv.org/abs/1711.11575](https://arxiv.org/abs/1711.11575)
+- github(official, MXNet): [https://github.com/msracver/Relation-Networks-for-Object-Detection](https://github.com/msracver/Relation-Networks-for-Object-Detection)
+
+# Adversarial Examples
 
 **Adversarial Examples that Fool Detectors**
 
@@ -828,6 +1142,11 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 
 - intro: IJCAI 2017
 - arxiv: [https://arxiv.org/abs/1706.06768](https://arxiv.org/abs/1706.06768)
+
+**Visual and Semantic Knowledge Transfer for Large Scale Semi-supervised Object Detection**
+
+- intro: TPAMI 2017. National Institutes of Health (NIH) Clinical Center
+- arxiv: [https://arxiv.org/abs/1801.03145](https://arxiv.org/abs/1801.03145)
 
 # Video Object Detection
 
@@ -925,11 +1244,55 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 
 [https://arxiv.org/abs/1801.01769](https://arxiv.org/abs/1801.01769)
 
+**Object Detection in Videos by Short and Long Range Object Linking**
+
+[https://arxiv.org/abs/1801.09823](https://arxiv.org/abs/1801.09823)
+
+**Object Detection in Video with Spatiotemporal Sampling Networks**
+
+- intro: University of Pennsylvania, 2Dartmouth College
+- arxiv: [https://arxiv.org/abs/1803.05549](https://arxiv.org/abs/1803.05549)
+
+**Towards High Performance Video Object Detection for Mobiles**
+
+- intro: Microsoft Research Asia
+- arxiv: [https://arxiv.org/abs/1804.05830](https://arxiv.org/abs/1804.05830)
+
+**Optimizing Video Object Detection via a Scale-Time Lattice**
+
+- intro: CVPR 2018
+- project page: [http://mmlab.ie.cuhk.edu.hk/projects/ST-Lattice/](http://mmlab.ie.cuhk.edu.hk/projects/ST-Lattice/)
+- arxiv: [https://arxiv.org/abs/1804.05472](https://arxiv.org/abs/1804.05472)
+- github: [https://github.com/hellock/scale-time-lattice](https://github.com/hellock/scale-time-lattice)
+
+**Pack and Detect: Fast Object Detection in Videos Using Region-of-Interest Packing**
+
+[https://arxiv.org/abs/1809.01701](https://arxiv.org/abs/1809.01701)
+
+# Object Detection on Mobile Devices
+
+**Pelee: A Real-Time Object Detection System on Mobile Devices**
+
+- intro: ICLR 2018 workshop track
+- intro: based on the SSD
+- arxiv: [https://arxiv.org/abs/1804.06882](https://arxiv.org/abs/1804.06882)
+- github: [https://github.com/Robert-JunWang/Pelee](https://github.com/Robert-JunWang/Pelee)
+
 # Object Detection in 3D
 
 **Vote3Deep: Fast Object Detection in 3D Point Clouds Using Efficient Convolutional Neural Networks**
 
 - arxiv: [https://arxiv.org/abs/1609.06666](https://arxiv.org/abs/1609.06666)
+
+**Complex-YOLO: Real-time 3D Object Detection on Point Clouds**
+
+- intro: Valeo Schalter und Sensoren GmbH & Ilmenau University of Technology
+- arxiv: [https://arxiv.org/abs/1803.06199](https://arxiv.org/abs/1803.06199)
+
+**Focal Loss in 3D Object Detection**
+
+- arxiv: [https://arxiv.org/abs/1809.06065](https://arxiv.org/abs/1809.06065)
+- github: [https://github.com/pyun-ram/FL3D](https://github.com/pyun-ram/FL3D)
 
 # Object Detection on RGB-D
 
@@ -945,6 +1308,33 @@ Continuation of [arXiv:1608.08021](https://arxiv.org/abs/1608.08021)
 **A Self-supervised Learning System for Object Detection using Physics Simulation and Multi-view Pose Estimation**
 
 [https://arxiv.org/abs/1703.03347](https://arxiv.org/abs/1703.03347)
+
+**Cross-Modal Attentional Context Learning for RGB-D Object Detection**
+
+- intro: IEEE Transactions on Image Processing
+- arxiv: [https://arxiv.org/abs/1810.12829](https://arxiv.org/abs/1810.12829)
+
+# Zero-Shot Object Detection
+
+**Zero-Shot Detection**
+
+- intro: Australian National University
+- keywords: YOLO
+- arxiv: [https://arxiv.org/abs/1803.07113](https://arxiv.org/abs/1803.07113)
+
+**Zero-Shot Object Detection**
+
+[https://arxiv.org/abs/1804.04340](https://arxiv.org/abs/1804.04340)
+
+**Zero-Shot Object Detection: Learning to Simultaneously Recognize and Localize Novel Concepts**
+
+- intro: Australian National University
+- arxiv: [https://arxiv.org/abs/1803.06049](https://arxiv.org/abs/1803.06049)
+
+**Zero-Shot Object Detection by Hybrid Region Embedding**
+
+- intro: Middle East Technical University & Hacettepe University
+- arxiv: [https://arxiv.org/abs/1805.06157](https://arxiv.org/abs/1805.06157)
 
 # Salient Object Detection
 
@@ -1046,7 +1436,10 @@ This task involves predicting the salient regions of an image given by human eye
 
 **Deeply supervised salient object detection with short connections**
 
+- intro: IEEE TPAMI 2018 (IEEE CVPR 2017)
 - arxiv: [https://arxiv.org/abs/1611.04849](https://arxiv.org/abs/1611.04849)
+- github(official, Caffe): [https://github.com/Andrew-Qibin/DSS](https://github.com/Andrew-Qibin/DSS)
+- github(Tensorflow): [https://github.com/Joker316701882/Salient-Object-Detection](https://github.com/Joker316701882/Salient-Object-Detection)
 
 **Weakly Supervised Top-down Salient Object Detection**
 
@@ -1110,7 +1503,30 @@ This task involves predicting the salient regions of an image given by human eye
 
 [https://arxiv.org/abs/1709.02495](https://arxiv.org/abs/1709.02495)
 
-## Video Saliency Detection
+**Recurrently Aggregating Deep Features for Salient Object Detection**
+- intro: AAAI 2018
+- paper: [https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16775/16281](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16775/16281)
+
+**Deep saliency: What is learnt by a deep network about saliency?**
+
+- intro: 2nd Workshop on Visualisation for Deep Learning in the 34th International Conference On Machine Learning
+- arxiv: [https://arxiv.org/abs/1801.04261](https://arxiv.org/abs/1801.04261)
+
+**Contrast-Oriented Deep Neural Networks for Salient Object Detection**
+
+- intro: TNNLS
+- arxiv: [https://arxiv.org/abs/1803.11395](https://arxiv.org/abs/1803.11395)
+
+**Salient Object Detection by Lossless Feature Reflection**
+
+- intro: IJCAI 2018
+- arxiv: [https://arxiv.org/abs/1802.06527](https://arxiv.org/abs/1802.06527)
+
+**HyperFusion-Net: Densely Reflective Fusion for Salient Object Detection**
+
+[https://arxiv.org/abs/1804.05142](https://arxiv.org/abs/1804.05142)
+
+# Video Saliency Detection
 
 **Deep Learning For Video Saliency Detection**
 
@@ -1164,6 +1580,26 @@ This task involves predicting the salient regions of an image given by human eye
 
 [https://arxiv.org/abs/1711.06032](https://arxiv.org/abs/1711.06032)
 
+**Detecting Visual Relationships Using Box Attention**
+
+- intro: Google AI & IST Austria
+- arxiv: [https://arxiv.org/abs/1807.02136](https://arxiv.org/abs/1807.02136)
+
+**Google AI Open Images - Visual Relationship Track**
+
+- intro: Detect pairs of objects in particular relationships
+- kaggle: [https://www.kaggle.com/c/google-ai-open-images-visual-relationship-track](https://www.kaggle.com/c/google-ai-open-images-visual-relationship-track)
+
+**Context-Dependent Diffusion Network for Visual Relationship Detection**
+
+- intro: 2018 ACM Multimedia Conference
+- arxiv: [https://arxiv.org/abs/1809.06213](https://arxiv.org/abs/1809.06213)
+
+**A Problem Reduction Approach for Visual Relationships Detection**
+
+- intro: ECCV 2018 Workshop
+- arxiv: [https://arxiv.org/abs/1809.09828](https://arxiv.org/abs/1809.09828)
+
 # Face Deteciton
 
 **Multi-view Face Detection Using Deep Convolutional Neural Networks**
@@ -1198,14 +1634,6 @@ This task involves predicting the salient regions of an image given by human eye
 - intro: CMU
 - arxiv: [https://arxiv.org/abs/1606.05413](https://arxiv.org/abs/1606.05413)
 
-**Finding Tiny Faces**
-
-- intro: CVPR 2017. CMU
-- project page: [http://www.cs.cmu.edu/~peiyunh/tiny/index.html](http://www.cs.cmu.edu/~peiyunh/tiny/index.html)
-- arxiv: [https://arxiv.org/abs/1612.04402](https://arxiv.org/abs/1612.04402)
-- github: [https://github.com/peiyunh/tiny](https://github.com/peiyunh/tiny)
-- github(inference-only): [https://github.com/chinakook/hr101_mxnet](https://github.com/chinakook/hr101_mxnet)
-
 **Towards a Deep Learning Framework for Unconstrained Face Detection**
 
 - intro: overlap with CMS-RCNN
@@ -1215,11 +1643,10 @@ This task involves predicting the salient regions of an image given by human eye
 
 - arxiv: [http://arxiv.org/abs/1607.05477](http://arxiv.org/abs/1607.05477)
 
-## UnitBox
-
 **UnitBox: An Advanced Object Detection Network**
 
 - intro: ACM MM 2016
+- keywords: IOULoss
 - arxiv: [http://arxiv.org/abs/1608.01471](http://arxiv.org/abs/1608.01471)
 
 **Bootstrapping Face Detection with Hard Negative Examples**
@@ -1250,14 +1677,15 @@ This task involves predicting the salient regions of an image given by human eye
 
 - project page: [https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html](https://kpzhang93.github.io/MTCNN_face_detection_alignment/index.html)
 - arxiv: [https://arxiv.org/abs/1604.02878](https://arxiv.org/abs/1604.02878)
-- github(Matlab): [https://github.com/kpzhang93/MTCNN_face_detection_alignment](https://github.com/kpzhang93/MTCNN_face_detection_alignment)
+- github(official, Matlab): [https://github.com/kpzhang93/MTCNN_face_detection_alignment](https://github.com/kpzhang93/MTCNN_face_detection_alignment)
 - github: [https://github.com/pangyupo/mxnet_mtcnn_face_detection](https://github.com/pangyupo/mxnet_mtcnn_face_detection)
 - github: [https://github.com/DaFuCoding/MTCNN_Caffe](https://github.com/DaFuCoding/MTCNN_Caffe)
 - github(MXNet): [https://github.com/Seanlinx/mtcnn](https://github.com/Seanlinx/mtcnn)
 - github: [https://github.com/Pi-DeepLearning/RaspberryPi-FaceDetection-MTCNN-Caffe-With-Motion](https://github.com/Pi-DeepLearning/RaspberryPi-FaceDetection-MTCNN-Caffe-With-Motion)
 - github(Caffe): [https://github.com/foreverYoungGitHub/MTCNN](https://github.com/foreverYoungGitHub/MTCNN)
 - github: [https://github.com/CongWeilin/mtcnn-caffe](https://github.com/CongWeilin/mtcnn-caffe)
-- github: [https://github.com/AlphaQi/MTCNN-light](https://github.com/AlphaQi/MTCNN-light)
+- github(OpenCV+OpenBlas): [https://github.com/AlphaQi/MTCNN-light](https://github.com/AlphaQi/MTCNN-light)
+- github(Tensorflow+golang): [https://github.com/jdeng/goface](https://github.com/jdeng/goface)
 
 **Face Detection using Deep Learning: An Improved Faster RCNN Approach**
 
@@ -1291,6 +1719,11 @@ This task involves predicting the salient regions of an image given by human eye
 - intro: CVPR 2017. SenseTime & Tsinghua University
 - arxiv: [https://arxiv.org/abs/1706.09876](https://arxiv.org/abs/1706.09876)
 
+**Detecting Faces Using Inside Cascaded Contextual CNN**
+
+- intro: CVPR 2017. Tencent AI Lab & SenseTime
+- paper: [http://ai.tencent.com/ailab/media/publications/Detecting_Faces_Using_Inside_Cascaded_Contextual_CNN.pdf](http://ai.tencent.com/ailab/media/publications/Detecting_Faces_Using_Inside_Cascaded_Contextual_CNN.pdf)
+
 **Multi-Branch Fully Convolutional Network for Face Detection**
 
 [https://arxiv.org/abs/1707.06330](https://arxiv.org/abs/1707.06330)
@@ -1311,12 +1744,14 @@ This task involves predicting the salient regions of an image given by human eye
 - keywords: Rapidly Digested Convolutional Layers (RDCL), Multiple Scale Convolutional Layers (MSCL)
 - intro: the proposed detector runs at 20 FPS on a single CPU core and 125 FPS using a GPU for VGA-resolution images
 - arxiv: [https://arxiv.org/abs/1708.05234](https://arxiv.org/abs/1708.05234)
+- github(Caffe): [https://github.com/zeusees/FaceBoxes](https://github.com/zeusees/FaceBoxes)
 
 **S3FD: Single Shot Scale-invariant Face Detector**
 
 - intro: ICCV 2017. Chinese Academy of Sciences
 - intro: can run at 36 FPS on a Nvidia Titan X (Pascal) for VGA-resolution images
 - arxiv: [https://arxiv.org/abs/1708.05237](https://arxiv.org/abs/1708.05237)
+- github(Caffe, official): [https://github.com/sfzhang15/SFD](https://github.com/sfzhang15/SFD)
 - github: [https://github.com//clcarwin/SFD_pytorch](https://github.com//clcarwin/SFD_pytorch)
 
 **Detecting Faces Using Region-based Fully Convolutional Networks**
@@ -1335,61 +1770,92 @@ This task involves predicting the salient regions of an image given by human eye
 
 [https://arxiv.org/abs/1712.00721](https://arxiv.org/abs/1712.00721)
 
-# Facial Point / Landmark Detection
+**Face Detection Using Improved Faster RCNN**
 
-**Deep Convolutional Network Cascade for Facial Point Detection**
+- intro: Huawei Cloud BU
+- arxiv: [https://arxiv.org/abs/1802.02142](https://arxiv.org/abs/1802.02142)
 
-![](http://mmlab.ie.cuhk.edu.hk/archive/CNN/data/Picture1.png)
+**PyramidBox: A Context-assisted Single Shot Face Detector**
 
-- homepage: [http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm)
-- paper: [http://www.ee.cuhk.edu.hk/~xgwang/papers/sunWTcvpr13.pdf](http://www.ee.cuhk.edu.hk/~xgwang/papers/sunWTcvpr13.pdf)
-- github: [https://github.com/luoyetx/deep-landmark](https://github.com/luoyetx/deep-landmark)
+- intro: Baidu, Inc
+- arxiv: [https://arxiv.org/abs/1803.07737](https://arxiv.org/abs/1803.07737)
 
-**Facial Landmark Detection by Deep Multi-task Learning**
+**A Fast Face Detection Method via Convolutional Neural Network**
 
-- intro: ECCV 2014
-- project page: [http://mmlab.ie.cuhk.edu.hk/projects/TCDCN.html](http://mmlab.ie.cuhk.edu.hk/projects/TCDCN.html)
-- paper: [http://personal.ie.cuhk.edu.hk/~ccloy/files/eccv_2014_deepfacealign.pdf](http://personal.ie.cuhk.edu.hk/~ccloy/files/eccv_2014_deepfacealign.pdf)
-- github(Matlab): [https://github.com/zhzhanp/TCDCN-face-alignment](https://github.com/zhzhanp/TCDCN-face-alignment)
+- intro: Neurocomputing
+- arxiv: [https://arxiv.org/abs/1803.10103](https://arxiv.org/abs/1803.10103)
 
-**A Recurrent Encoder-Decoder Network for Sequential Face Alignment**
+**Beyond Trade-off: Accelerate FCN-based Face Detector with Higher Accuracy**
 
-- intro: ECCV 2016
-- arxiv: [https://arxiv.org/abs/1608.05477](https://arxiv.org/abs/1608.05477)
+- intro: CVPR 2018. Beihang University & CUHK & Sensetime
+- arxiv: [https://arxiv.org/abs/1804.05197](https://arxiv.org/abs/1804.05197)
 
-**Detecting facial landmarks in the video based on a hybrid framework**
+**Real-Time Rotation-Invariant Face Detection with Progressive Calibration Networks**
 
-- arxiv: [http://arxiv.org/abs/1609.06441](http://arxiv.org/abs/1609.06441)
+- intro: CVPR 2018
+- arxiv: [https://arxiv.org/abs/1804.06039](https://arxiv.org/abs/1804.06039)
+- github(binary library): [https://github.com/Jack-CV/PCN](https://github.com/Jack-CV/PCN)
 
-**Deep Constrained Local Models for Facial Landmark Detection**
+**SFace: An Efficient Network for Face Detection in Large Scale Variations**
 
-- arxiv: [https://arxiv.org/abs/1611.08657](https://arxiv.org/abs/1611.08657)
+- intro: Beihang University & Megvii Inc. (Face++)
+- arxiv: [https://arxiv.org/abs/1804.06559](https://arxiv.org/abs/1804.06559)
 
-**Effective face landmark localization via single deep network**
+**Survey of Face Detection on Low-quality Images**
 
-- arxiv: [https://arxiv.org/abs/1702.02719](https://arxiv.org/abs/1702.02719)
+[https://arxiv.org/abs/1804.07362](https://arxiv.org/abs/1804.07362)
 
-**A Convolution Tree with Deconvolution Branches: Exploiting Geometric Relationships for Single Shot Keypoint Detection**
+**Anchor Cascade for Efficient Face Detection**
 
-[https://arxiv.org/abs/1704.01880](https://arxiv.org/abs/1704.01880)
+- intro: The University of Sydney
+- arxiv: [https://arxiv.org/abs/1805.03363](https://arxiv.org/abs/1805.03363)
 
-**Deep Alignment Network: A convolutional neural network for robust face alignment**
+**Adversarial Attacks on Face Detectors using Neural Net based Constrained Optimization**
 
-- intro: CVPRW 2017
-- arxiv: [https://arxiv.org/abs/1706.01789](https://arxiv.org/abs/1706.01789)
-- gihtub: [https://github.com/MarekKowalski/DeepAlignmentNetwork](https://github.com/MarekKowalski/DeepAlignmentNetwork)
+- intro: IEEE MMSP
+- arxiv: [https://arxiv.org/abs/1805.12302](https://arxiv.org/abs/1805.12302)
 
-**Joint Multi-view Face Alignment in the Wild**
+**Selective Refinement Network for High Performance Face Detection**
 
-[https://arxiv.org/abs/1708.06023](https://arxiv.org/abs/1708.06023)
+[https://arxiv.org/abs/1809.02693](https://arxiv.org/abs/1809.02693)
 
-**FacePoseNet: Making a Case for Landmark-Free Face Alignment**
+**DSFD: Dual Shot Face Detector**
 
-[https://arxiv.org/abs/1708.07517](https://arxiv.org/abs/1708.07517)
+[https://arxiv.org/abs/1810.10220](https://arxiv.org/abs/1810.10220)
 
-**Wing Loss for Robust Facial Landmark Localisation with Convolutional Neural Networks**
+**Learning Better Features for Face Detection with Feature Fusion and Segmentation Supervision**
 
-[https://arxiv.org/abs/1711.06753](https://arxiv.org/abs/1711.06753)
+[https://arxiv.org/abs/1811.08557](https://arxiv.org/abs/1811.08557)
+
+## Detect Small Faces
+
+**Finding Tiny Faces**
+
+- intro: CVPR 2017. CMU
+- project page: [http://www.cs.cmu.edu/~peiyunh/tiny/index.html](http://www.cs.cmu.edu/~peiyunh/tiny/index.html)
+- arxiv: [https://arxiv.org/abs/1612.04402](https://arxiv.org/abs/1612.04402)
+- github(official, Matlab): [https://github.com/peiyunh/tiny](https://github.com/peiyunh/tiny)
+- github(inference-only): [https://github.com/chinakook/hr101_mxnet](https://github.com/chinakook/hr101_mxnet)
+- github: [https://github.com/cydonia999/Tiny_Faces_in_Tensorflow](https://github.com/cydonia999/Tiny_Faces_in_Tensorflow)
+
+**Detecting and counting tiny faces**
+
+- intro: ENS Paris-Saclay. ExtendedTinyFaces
+- intro: Detecting and counting small objects - Analysis, review and application to counting
+- arxiv: [https://arxiv.org/abs/1801.06504](https://arxiv.org/abs/1801.06504)
+- github: [https://github.com/alexattia/ExtendedTinyFaces](https://github.com/alexattia/ExtendedTinyFaces)
+
+**Seeing Small Faces from Robust Anchor's Perspective**
+
+- intro: CVPR 2018
+- arxiv: [https://arxiv.org/abs/1802.09058](https://arxiv.org/abs/1802.09058)
+
+**Face-MagNet: Magnifying Feature Maps to Detect Small Faces**
+
+- intro: WACV 2018
+- keywords: Face Magnifier Network (Face-MageNet)
+- arxiv: [https://arxiv.org/abs/1803.05258](https://arxiv.org/abs/1803.05258)
+- github: [https://github.com/po0ya/face-magnet](https://github.com/po0ya/face-magnet)
 
 # Person Head Detection
 
@@ -1399,6 +1865,19 @@ This task involves predicting the salient regions of an image given by human eye
 - project page: [http://www.di.ens.fr/willow/research/headdetection/](http://www.di.ens.fr/willow/research/headdetection/)
 - arxiv: [http://arxiv.org/abs/1511.07917](http://arxiv.org/abs/1511.07917)
 - github: [https://github.com/aosokin/cnn_head_detection](https://github.com/aosokin/cnn_head_detection)
+
+**Detecting Heads using Feature Refine Net and Cascaded Multi-scale Architecture**
+
+[https://arxiv.org/abs/1803.09256](https://arxiv.org/abs/1803.09256)
+
+**A Comparison of CNN-based Face and Head Detectors for Real-Time Video Surveillance Applications**
+
+[https://arxiv.org/abs/1809.03336](https://arxiv.org/abs/1809.03336)
+
+**FCHD: A fast and accurate head detector**
+
+- arxiv: [https://arxiv.org/abs/1809.08766](https://arxiv.org/abs/1809.08766)
+- github(PyTorch, official): [https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector](https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector)
 
 # Pedestrian Detection / People Detection
 
@@ -1426,8 +1905,6 @@ This task involves predicting the salient regions of an image given by human eye
 - github: [https://github.com/byangderek/CCF](https://github.com/byangderek/CCF)
 
 **End-to-end people detection in crowded scenes**
-
-![](/assets/object-detection-materials/end_to_end_people_detection_in_crowded_scenes.jpg)
 
 - arxiv: [http://arxiv.org/abs/1506.04878](http://arxiv.org/abs/1506.04878)
 - github: [https://github.com/Russell91/reinspect](https://github.com/Russell91/reinspect)
@@ -1471,6 +1948,11 @@ This task involves predicting the salient regions of an image given by human eye
 - arxiv: [http://arxiv.org/abs/1607.07032](http://arxiv.org/abs/1607.07032)
 - github: [https://github.com/zhangliliang/RPN_BF/tree/RPN-pedestrian](https://github.com/zhangliliang/RPN_BF/tree/RPN-pedestrian)
 
+**Unsupervised Deep Domain Adaptation for Pedestrian Detection**
+
+- intro: ECCV Workshop 2016
+- arxiv: [https://arxiv.org/abs/1802.03269](https://arxiv.org/abs/1802.03269)
+
 **Reduced Memory Region Based Deep Convolutional Neural Network Detection**
 
 - intro: IEEE 2016 ICCE-Berlin
@@ -1501,6 +1983,13 @@ This task involves predicting the salient regions of an image given by human eye
 - arxiv: [https://arxiv.org/abs/1703.06283](https://arxiv.org/abs/1703.06283)
 - github(Tensorflow): [https://github.com/huangshiyu13/RPNplus](https://github.com/huangshiyu13/RPNplus)
 
+**What Can Help Pedestrian Detection?**
+
+- intro: CVPR 2017. Tsinghua University & Peking University & Megvii Inc.
+- keywords: Faster R-CNN, HyperLearner
+- arxiv: [https://arxiv.org/abs/1705.02757](https://arxiv.org/abs/1705.02757)
+- paper: [http://openaccess.thecvf.com/content_cvpr_2017/papers/Mao_What_Can_Help_CVPR_2017_paper.pdf](http://openaccess.thecvf.com/content_cvpr_2017/papers/Mao_What_Can_Help_CVPR_2017_paper.pdf)
+
 **Illuminating Pedestrians via Simultaneous Detection & Segmentation**
 
 [https://arxiv.org/abs/1706.08564](https://arxiv.org/abs/1706.08564
@@ -1527,6 +2016,39 @@ This task involves predicting the salient regions of an image given by human eye
 
 [https://arxiv.org/abs/1801.00476](https://arxiv.org/abs/1801.00476)
 
+**Illumination-aware Faster R-CNN for Robust Multispectral Pedestrian Detection**
+
+- intro: State Key Lab of CAD&CG, Zhejiang University
+- arxiv: [https://arxiv.org/abs/1803.05347](https://arxiv.org/abs/1803.05347)
+
+**Exploring Multi-Branch and High-Level Semantic Networks for Improving Pedestrian Detection**
+
+[https://arxiv.org/abs/1804.00872](https://arxiv.org/abs/1804.00872)
+
+**Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond**
+
+[https://arxiv.org/abs/1804.02047](https://arxiv.org/abs/1804.02047)
+
+**PCN: Part and Context Information for Pedestrian Detection with CNNs**
+
+- intro: British Machine Vision Conference(BMVC) 2017
+- arxiv: [https://arxiv.org/abs/1804.04483](https://arxiv.org/abs/1804.04483)
+
+**Small-scale Pedestrian Detection Based on Somatic Topology Localization and Temporal Feature Aggregation**
+
+- intro: ECCV 2018. Hikvision Research Institute
+- arxiv: [https://arxiv.org/abs/1807.01438](https://arxiv.org/abs/1807.01438)
+
+**Occlusion-aware R-CNN: Detecting Pedestrians in a Crowd**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1807.08407](https://arxiv.org/abs/1807.08407)
+
+**Multispectral Pedestrian Detection via Simultaneous Detection and Segmentation**
+
+- intro: BMVC 2018
+- arxiv: [https://arxiv.org/abs/1808.04818](https://arxiv.org/abs/1808.04818)
+
 # Vehicle Detection
 
 **DAVE: A Unified Framework for Fast Vehicle Detection and Annotation**
@@ -1543,73 +2065,58 @@ This task involves predicting the salient regions of an image given by human eye
 - intro: AAAI 2016
 - arxiv: [https://arxiv.org/abs/1709.02480](https://arxiv.org/abs/1709.02480)
 
+**SINet: A Scale-insensitive Convolutional Neural Network for Fast Vehicle Detection**
+
+- intro: IEEE Transactions on Intelligent Transportation Systems (T-ITS)
+- arxiv: [https://arxiv.org/abs/1804.00433](https://arxiv.org/abs/1804.00433)
+
+**Label and Sample: Efficient Training of Vehicle Object Detector from Sparsely Labeled Data**
+
+- intro: UC Berkeley
+- arxiv: [https://arxiv.org/abs/1808.08603](https://arxiv.org/abs/1808.08603)
+
+**Domain Randomization for Scene-Specific Car Detection and Pose Estimation**
+
+[https://arxiv.org/abs/1811.05939](https://arxiv.org/abs/1811.05939)
+
+**ShuffleDet: Real-Time Vehicle Detection Network in On-board Embedded UAV Imagery**
+
+- intro: ECCV 2018, UAVision 2018
+- arxiv: [https://arxiv.org/abs/1811.06318](https://arxiv.org/abs/1811.06318)
+
 # Traffic-Sign Detection
 
 **Traffic-Sign Detection and Classification in the Wild**
 
+- intro: CVPR 2016
 - project page(code+dataset): [http://cg.cs.tsinghua.edu.cn/traffic-sign/](http://cg.cs.tsinghua.edu.cn/traffic-sign/)
 - paper: [http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhu_Traffic-Sign_Detection_and_CVPR_2016_paper.pdf](http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Zhu_Traffic-Sign_Detection_and_CVPR_2016_paper.pdf)
 - code & model: [http://cg.cs.tsinghua.edu.cn/traffic-sign/data_model_code/newdata0411.zip](http://cg.cs.tsinghua.edu.cn/traffic-sign/data_model_code/newdata0411.zip)
+
+**Evaluating State-of-the-art Object Detector on Challenging Traffic Light Data**
+
+- intro: CVPR 2017 workshop
+- paper: [http://openaccess.thecvf.com/content_cvpr_2017_workshops/w9/papers/Jensen_Evaluating_State-Of-The-Art_Object_CVPR_2017_paper.pdf](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w9/papers/Jensen_Evaluating_State-Of-The-Art_Object_CVPR_2017_paper.pdf)
 
 **Detecting Small Signs from Large Images**
 
 - intro: IEEE Conference on Information Reuse and Integration (IRI) 2017 oral
 - arxiv: [https://arxiv.org/abs/1706.08574](https://arxiv.org/abs/1706.08574)
 
-# Boundary / Edge / Contour Detection
+**Localized Traffic Sign Detection with Multi-scale Deconvolution Networks**
 
-**Holistically-Nested Edge Detection**
+[https://arxiv.org/abs/1804.10428](https://arxiv.org/abs/1804.10428)
 
-![](https://camo.githubusercontent.com/da32e7e3275c2a9693dd2a6925b03a1151e2b098/687474703a2f2f70616765732e756373642e6564752f7e7a74752f6865642e6a7067)
+**Detecting Traffic Lights by Single Shot Detection**
 
-- intro: ICCV 2015, Marr Prize
-- paper: [http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Xie_Holistically-Nested_Edge_Detection_ICCV_2015_paper.pdf](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Xie_Holistically-Nested_Edge_Detection_ICCV_2015_paper.pdf)
-- arxiv: [http://arxiv.org/abs/1504.06375](http://arxiv.org/abs/1504.06375)
-- github: [https://github.com/s9xie/hed](https://github.com/s9xie/hed)
+- intro: ITSC 2018
+- arxiv: [https://arxiv.org/abs/1805.02523](https://arxiv.org/abs/1805.02523)
 
-**Unsupervised Learning of Edges**
+**A Hierarchical Deep Architecture and Mini-Batch Selection Method For Joint Traffic Sign and Light Detection**
 
-- intro: CVPR 2016. Facebook AI Research
-- arxiv: [http://arxiv.org/abs/1511.04166](http://arxiv.org/abs/1511.04166)
-- zn-blog: [http://www.leiphone.com/news/201607/b1trsg9j6GSMnjOP.html](http://www.leiphone.com/news/201607/b1trsg9j6GSMnjOP.html)
-
-**Pushing the Boundaries of Boundary Detection using Deep Learning**
-
-- arxiv: [http://arxiv.org/abs/1511.07386](http://arxiv.org/abs/1511.07386)
-
-**Convolutional Oriented Boundaries**
-
-- intro: ECCV 2016
-- arxiv: [http://arxiv.org/abs/1608.02755](http://arxiv.org/abs/1608.02755)
-
-**Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks**
-
-- project page: [http://www.vision.ee.ethz.ch/~cvlsegmentation/](http://www.vision.ee.ethz.ch/~cvlsegmentation/)
-- arxiv: [https://arxiv.org/abs/1701.04658](https://arxiv.org/abs/1701.04658)
-- github: [https://github.com/kmaninis/COB](https://github.com/kmaninis/COB)
-
-**Richer Convolutional Features for Edge Detection**
-
-- intro: CVPR 2017
-- keywords: richer convolutional features (RCF)
-- arxiv: [https://arxiv.org/abs/1612.02103](https://arxiv.org/abs/1612.02103)
-- github: [https://github.com/yun-liu/rcf](https://github.com/yun-liu/rcf)
-
-**Contour Detection from Deep Patch-level Boundary Prediction**
-
-[https://arxiv.org/abs/1705.03159](https://arxiv.org/abs/1705.03159)
-
-**CASENet: Deep Category-Aware Semantic Edge Detection**
-
-- intro: CVPR 2017. CMU & Mitsubishi Electric Research Laboratories (MERL)
-- arxiv: [https://arxiv.org/abs/1705.09759](https://arxiv.org/abs/1705.09759)
-- code: [http://www.merl.com/research/license#CASENet](http://www.merl.com/research/license#CASENet)
-- video: [https://www.youtube.com/watch?v=BNE1hAP6Qho](https://www.youtube.com/watch?v=BNE1hAP6Qho)
-
-**Learning Deep Structured Multi-Scale Features using Attention-Gated CRFs for Contour Prediction**
-
-- intro: NIPS 2017
-- arxiv: [https://arxiv.org/abs/1801.00524](https://arxiv.org/abs/1801.00524)
+- intro: IEEE 15th Conference on Computer and Robot Vision
+- arxiv: [https://arxiv.org/abs/1806.07987](https://arxiv.org/abs/1806.07987)
+- demo: [https://www.youtube.com/watch?v=_YmogPzBXOw&feature=youtu.be](https://www.youtube.com/watch?v=_YmogPzBXOw&feature=youtu.be)
 
 # Skeleton Detection
 
@@ -1662,9 +2169,15 @@ This task involves predicting the salient regions of an image given by human eye
 
 **Direction-aware Spatial Context Features for Shadow Detection**
 
-[https://arxiv.org/abs/1712.04142](https://arxiv.org/abs/1712.04142)
+- intro: CVPR 2018
+- arxiv: [https://arxiv.org/abs/1712.04142](https://arxiv.org/abs/1712.04142)
 
-# Others Deteciton
+**Direction-aware Spatial Context Features for Shadow Detection and Removal**
+
+- intro: The Chinese University of Hong Kong & The Hong Kong Polytechnic University
+- arxiv:- arxiv:  [https://arxiv.org/abs/1805.04635](https://arxiv.org/abs/1805.04635)
+
+# Others Detection
 
 **Deep Deformation Network for Object Landmark Localization**
 
@@ -1711,6 +2224,10 @@ This task involves predicting the salient regions of an image given by human eye
 
 - arxiv: [https://arxiv.org/abs/1612.09322](https://arxiv.org/abs/1612.09322)
 
+**Scalable Deep Learning Logo Detection**
+
+[https://arxiv.org/abs/1803.11417](https://arxiv.org/abs/1803.11417)
+
 **Pixel-wise Ear Detection with Convolutional Encoder-Decoder Networks**
 
 - arxiv: [https://arxiv.org/abs/1702.00307](https://arxiv.org/abs/1702.00307)
@@ -1734,6 +2251,10 @@ This task involves predicting the salient regions of an image given by human eye
 - intro: ICCV 2017
 - arxiv: [https://arxiv.org/abs/1708.01642](https://arxiv.org/abs/1708.01642)
 
+**Target Driven Instance Detection**
+
+[https://arxiv.org/abs/1803.04610](https://arxiv.org/abs/1803.04610)
+
 **DeepVoting: An Explainable Framework for Semantic Part Detection under Partial Occlusion**
 
 [https://arxiv.org/abs/1709.04577](https://arxiv.org/abs/1709.04577)
@@ -1747,6 +2268,35 @@ This task involves predicting the salient regions of an image given by human eye
 **Grab, Pay and Eat: Semantic Food Detection for Smart Restaurants**
 
 [https://arxiv.org/abs/1711.05128](https://arxiv.org/abs/1711.05128)
+
+**ReMotENet: Efficient Relevant Motion Event Detection for Large-scale Home Surveillance Videos**
+
+- intro: WACV 2018
+- arxiv: [https://arxiv.org/abs/1801.02031](https://arxiv.org/abs/1801.02031)
+
+**Deep Learning Object Detection Methods for Ecological Camera Trap Data**
+
+- intro: Conference of Computer and Robot Vision. University of Guelph
+- arxiv: [https://arxiv.org/abs/1803.10842](https://arxiv.org/abs/1803.10842)
+
+**EL-GAN: Embedding Loss Driven Generative Adversarial Networks for Lane Detection**
+
+[https://arxiv.org/abs/1806.05525](https://arxiv.org/abs/1806.05525)
+
+**Towards End-to-End Lane Detection: an Instance Segmentation Approach**
+
+[https://arxiv.org/abs/1802.05591](https://arxiv.org/abs/1802.05591)
+
+**iCAN: Instance-Centric Attention Network for Human-Object Interaction Detection**
+
+- intro: BMVC 2018
+- project page: [https://gaochen315.github.io/iCAN/](https://gaochen315.github.io/iCAN/)
+- arxiv: [https://arxiv.org/abs/1808.10437](https://arxiv.org/abs/1808.10437)
+- github: [https://github.com/vt-vl-lab/iCAN](https://github.com/vt-vl-lab/iCAN)
+
+**Densely Supervised Grasp Detector (DSGD)**
+
+[https://arxiv.org/abs/1810.03962](https://arxiv.org/abs/1810.03962)
 
 # Object Proposal
 
@@ -1785,6 +2335,19 @@ This task involves predicting the salient regions of an image given by human eye
 
 - intro: ICMR 2017
 - arxiv: [https://arxiv.org/abs/1704.08881](https://arxiv.org/abs/1704.08881)
+
+**Open Logo Detection Challenge**
+
+- intro: BMVC 2018
+- keywords: QMUL-OpenLogo
+- project page: [https://qmul-openlogo.github.io/](https://qmul-openlogo.github.io/)
+- arxiv: [https://arxiv.org/abs/1807.01964](https://arxiv.org/abs/1807.01964)
+
+**AttentionMask: Attentive, Efficient Object Proposal Generation Focusing on Small Objects**
+
+- intro: ACCV 2018 oral
+- arxiv: [https://arxiv.org/abs/1811.08728](https://arxiv.org/abs/1811.08728)
+- github: [https://github.com/chwilms/AttentionMask](https://github.com/chwilms/AttentionMask)
 
 # Localization
 
@@ -1870,7 +2433,20 @@ This task involves predicting the salient regions of an image given by human eye
 - intro: Hikvision Research Institute. Supervised Data Augmentation (SDA)
 - slides: [http://image-net.org/challenges/talks/2016/Hikvision_at_ImageNet_2016.pdf](http://image-net.org/challenges/talks/2016/Hikvision_at_ImageNet_2016.pdf)
 
+**Work in progress: Improving object detection and instance segmentation for small objects**
+
+[https://docs.google.com/presentation/d/1OTfGn6mLe1VWE8D0q6Tu_WwFTSoLGd4OF8WCYnOWcVo/edit#slide=id.g37418adc7a_0_229](https://docs.google.com/presentation/d/1OTfGn6mLe1VWE8D0q6Tu_WwFTSoLGd4OF8WCYnOWcVo/edit#slide=id.g37418adc7a_0_229)
+
+**Object Detection with Deep Learning: A Review**
+
+[https://arxiv.org/abs/1807.05511](https://arxiv.org/abs/1807.05511)
+
 # Projects
+
+**Detectron**
+
+- intro: FAIR's research platform for object detection research, implementing popular algorithms like Mask R-CNN and RetinaNet.
+- github: [https://github.com/facebookresearch/Detectron](https://github.com/facebookresearch/Detectron)
 
 **TensorBox: a simple framework for training neural networks to detect objects in images**
 
@@ -1905,6 +2481,16 @@ We additionally provide an implementation of the [ReInspect](https://github.com/
 
 - blog: [https://towardsdatascience.com/how-to-build-a-real-time-hand-detector-using-neural-networks-ssd-on-tensorflow-d6bac0e4b2ce](https://towardsdatascience.com/how-to-build-a-real-time-hand-detector-using-neural-networks-ssd-on-tensorflow-d6bac0e4b2ce)
 - github: [https://github.com//victordibia/handtracking](https://github.com//victordibia/handtracking)
+
+**Metrics for object detection**
+
+- intro: Most popular metrics used to evaluate object detection algorithms
+- github: [https://github.com/rafaelpadilla/Object-Detection-Metrics](https://github.com/rafaelpadilla/Object-Detection-Metrics)
+
+**MobileNetv2-SSDLite**
+
+- intro: Caffe implementation of SSD and SSDLite detection on MobileNetv2, converted from tensorflow.
+- github: [https://github.com/chuanqi305/MobileNetv2-SSDLite](https://github.com/chuanqi305/MobileNetv2-SSDLite)
 
 # Leaderboard
 
@@ -1984,3 +2570,11 @@ We additionally provide an implementation of the [ReInspect](https://github.com/
 **Understanding SSD MultiBox — Real-Time Object Detection In Deep Learning**
 
 [https://towardsdatascience.com/understanding-ssd-multibox-real-time-object-detection-in-deep-learning-495ef744fab](https://towardsdatascience.com/understanding-ssd-multibox-real-time-object-detection-in-deep-learning-495ef744fab)
+
+**One-shot object detection**
+
+[http://machinethink.net/blog/object-detection/](http://machinethink.net/blog/object-detection/)
+
+**An overview of object detection: one-stage methods**
+
+[https://www.jeremyjordan.me/object-detection-one-stage/](https://www.jeremyjordan.me/object-detection-one-stage/)

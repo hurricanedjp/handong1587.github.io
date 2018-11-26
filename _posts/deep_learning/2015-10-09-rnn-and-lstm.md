@@ -511,6 +511,7 @@ date: 2015-10-09
 - keywords: DilatedRNN
 - arxiv: [https://arxiv.org/abs/1710.02224](https://arxiv.org/abs/1710.02224)
 - github(Tensorflow): [https://github.com/code-terminator/DilatedRNN](https://github.com/code-terminator/DilatedRNN)
+[https://github.com/zalandoresearch/pt-dilate-rnn](https://github.com/zalandoresearch/pt-dilate-rnn)
 
 **Excitation Backprop for RNNs**
 
@@ -637,6 +638,10 @@ date: 2015-10-09
 
 - intro: University of Toronto & University of Waterloo
 - arxiv: [https://arxiv.org/abs/1801.01078](https://arxiv.org/abs/1801.01078)
+
+**Grow and Prune Compact, Fast, and Accurate LSTMs**
+
+[https://arxiv.org/abs/1805.11797](https://arxiv.org/abs/1805.11797)
 
 # Projects
 

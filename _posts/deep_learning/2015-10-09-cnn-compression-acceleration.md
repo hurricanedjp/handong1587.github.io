@@ -256,11 +256,6 @@ while maintaining state-of-the-art accuracy. For GoogLeNet, our model has 7% few
 - intro: NIPS Workshop on Efficient Methods for Deep Neural Networks (EMDNN), 2016
 - arxiv: [http://arxiv.org/abs/1608.08710](http://arxiv.org/abs/1608.08710)
 
-**Accelerating Deep Convolutional Networks using low-precision and sparsity**
-
-- intro: Intel Labs
-- arxiv: [https://arxiv.org/abs/1610.00324](https://arxiv.org/abs/1610.00324)
-
 **Fixed-point Factorized Networks**
 
 - arxiv: [https://arxiv.org/abs/1611.01972](https://arxiv.org/abs/1611.01972)
@@ -323,11 +318,6 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 - intro: CMU & Universitat Paderborn]
 - arxiv: [https://arxiv.org/abs/1701.04465](https://arxiv.org/abs/1701.04465)
 
-**Deep Learning with Low Precision by Half-wave Gaussian Quantization**
-
-- intro: HWGQ-Net
-- arxiv: [https://arxiv.org/abs/1702.00953](https://arxiv.org/abs/1702.00953)
-
 **DL-gleaning: An Approach For Improving Inference Speed And Accuracy**
 
 - intro: Electronics Telecommunications Research Institute (ETRI)
@@ -337,11 +327,6 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 - intro: Middle East Technical University & Bilkent University
 - arxiv: [https://arxiv.org/abs/1702.02676](https://arxiv.org/abs/1702.02676)
-
-**Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
-
-- intro: ICLR 2017
-- arxiv: [https://arxiv.org/abs/1702.03044](https://arxiv.org/abs/1702.03044)
 
 **Soft Weight-Sharing for Neural Network Compression**
 
@@ -363,10 +348,6 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 [https://arxiv.org/abs/1704.01137](https://arxiv.org/abs/1704.01137)
 
-**Incremental Network Quantization: Towards Lossless CNNs with Low-precision Weights**
-
-[https://openreview.net/forum?id=HyQJ-mclg&noteId=HyQJ-mclg](https://openreview.net/forum?id=HyQJ-mclg&noteId=HyQJ-mclg)
-
 **Bayesian Compression for Deep Learning**
 
 [https://arxiv.org/abs/1705.08665](https://arxiv.org/abs/1705.08665)
@@ -385,11 +366,6 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 - intro: The University of Iowa & Snap Research
 - arxiv: [https://arxiv.org/abs/1706.03912](https://arxiv.org/abs/1706.03912)
 
-**ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks**
-
-- arxiv: [https://arxiv.org/abs/1706.02393](https://arxiv.org/abs/1706.02393)
-- github: [https://github.com/gudovskiy/ShiftCNN](https://github.com/gudovskiy/ShiftCNN)
-
 **MEC: Memory-efficient Convolution for Deep Neural Network**
 
 - intro: ICML 2017
@@ -399,20 +375,9 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 [https://arxiv.org/abs/1707.01213](https://arxiv.org/abs/1707.01213)
 
-**Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM**
-
-- intro: Alibaba Group
-- keywords: alternating direction method of multipliers (ADMM)
-- arxiv: [https://arxiv.org/abs/1707.09870](https://arxiv.org/abs/1707.09870)
-
 **An End-to-End Compression Framework Based on Convolutional Neural Networks**
 
 [https://arxiv.org/abs/1708.00838](https://arxiv.org/abs/1708.00838)
-
-**Learning Accurate Low-Bit Deep Neural Networks with Stochastic Quantization**
-
-- intro: BMVC 2017 Oral
-- arxiv: [https://arxiv.org/abs/1708.01001](https://arxiv.org/abs/1708.01001)
 
 **Domain-adaptive deep network compression**
 
@@ -423,11 +388,6 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 **Binary-decomposed DCNN for accelerating computation and compressing model without retraining**
 
 [https://arxiv.org/abs/1709.04731](https://arxiv.org/abs/1709.04731)
-
-**Compressing Low Precision Deep Neural Networks Using Sparsity-Induced Regularization in Ternary Networks**
-
-- intro: ICONIP 2017
-- arxiv: [https://arxiv.org/abs/1709.06262](https://arxiv.org/abs/1709.06262)
 
 **Improving Efficiency in Convolutional Neural Network with Multilinear Filters**
 
@@ -446,6 +406,80 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 **Training Simplification and Model Simplification for Deep Learning: A Minimal Effort Back Propagation Method**
 
 [https://arxiv.org/abs/1711.06528](https://arxiv.org/abs/1711.06528)
+
+**Reducing Deep Network Complexity with Fourier Transform Methods**
+
+- intro: Harvard University
+- arxiv: [https://arxiv.org/abs/1801.01451](https://arxiv.org/abs/1801.01451)
+- github: [https://github.com/andrew-jeremy/Reducing-Deep-Network-Complexity-with-Fourier-Transform-Methods](https://github.com/andrew-jeremy/Reducing-Deep-Network-Complexity-with-Fourier-Transform-Methods)
+
+**EffNet: An Efficient Structure for Convolutional Neural Networks**
+
+- intro: Aptiv & University of Wupperta
+- arxiv: [https://arxiv.org/abs/1801.06434](https://arxiv.org/abs/1801.06434)
+
+**Universal Deep Neural Network Compression**
+
+[https://arxiv.org/abs/1802.02271](https://arxiv.org/abs/1802.02271)
+
+**Paraphrasing Complex Network: Network Compression via Factor Transfer**
+
+[https://arxiv.org/abs/1802.04977](https://arxiv.org/abs/1802.04977)
+
+**Compressing Neural Networks using the Variational Information Bottleneck**
+
+- intro: Tsinghua University & ShanghaiTech University & Microsoft Research
+- arxiv: [https://arxiv.org/abs/1802.10399](https://arxiv.org/abs/1802.10399)
+
+**Adversarial Network Compression**
+
+[https://arxiv.org/abs/1803.10750](https://arxiv.org/abs/1803.10750)
+
+**Expanding a robot's life: Low power object recognition via FPGA-based DCNN deployment**
+
+- intro: MOCAST 2018
+- arxiv: [https://arxiv.org/abs/1804.00512](https://arxiv.org/abs/1804.00512)
+
+**Accelerating CNN inference on FPGAs: A Survey**
+
+- intro: [Institut Pascal]
+- arxiv: [https://arxiv.org/abs/1806.01683](https://arxiv.org/abs/1806.01683)
+
+**Doubly Nested Network for Resource-Efficient Inference**
+
+[https://arxiv.org/abs/1806.07568](https://arxiv.org/abs/1806.07568)
+
+**Smallify: Learning Network Size while Training**
+
+- intro: MIT
+- arxiv: [https://arxiv.org/abs/1806.03723](https://arxiv.org/abs/1806.03723)
+
+**Synetgy: Algorithm-hardware Co-design for ConvNet Accelerators on Embedded FPGAs**
+
+- intro: 27th International Symposium on Field-Programmable Gate Arrays, February 2019
+- arxiv: [https://arxiv.org/abs/1811.08634](https://arxiv.org/abs/1811.08634)
+
+# Compressing Deep Neural Network
+
+**Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions**
+
+- intro: ICML 2018
+- arxiv: [https://arxiv.org/abs/1806.09228](https://arxiv.org/abs/1806.09228)
+- github: [https://github.com/Sandbox3aster/Deep-K-Means-pytorch](https://github.com/Sandbox3aster/Deep-K-Means-pytorch)
+
+**Optimize Deep Convolutional Neural Network with Ternarized Weights and High Accuracy**
+
+- intro: University of Central Florida & Tencent AI lab, Seattle
+- arxiv: [https://arxiv.org/abs/1807.07948](https://arxiv.org/abs/1807.07948)
+
+**Blended Coarse Gradient Descent for Full Quantization of Deep Neural Networks**
+
+[https://arxiv.org/abs/1808.05240](https://arxiv.org/abs/1808.05240)
+
+**ChannelNets: Compact and Efficient Convolutional Neural Networks via Channel-Wise Convolutions**
+
+- intro: NIPS 2018
+- arxiv: [https://arxiv.org/abs/1809.01330](https://arxiv.org/abs/1809.01330)
 
 # Pruning
 
@@ -478,6 +512,129 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 [https://arxiv.org/abs/1712.01721](https://arxiv.org/abs/1712.01721)
 
+**Learning to Prune Filters in Convolutional Neural Networks**
+
+[https://arxiv.org/abs/1801.07365](https://arxiv.org/abs/1801.07365)
+
+**Recovering from Random Pruning: On the Plasticity of Deep Convolutional Neural Networks**
+
+- intro: WACV 2018
+- arxiv: [https://arxiv.org/abs/1801.10447](https://arxiv.org/abs/1801.10447)
+
+**A novel channel pruning method for deep neural network compression**
+
+[https://arxiv.org/abs/1805.11394](https://arxiv.org/abs/1805.11394)
+
+**PCAS: Pruning Channels with Attention Statistics**
+
+- intro: Oki Electric Industry Co., Ltd
+- arxiv: [https://arxiv.org/abs/1806.05382](https://arxiv.org/abs/1806.05382)
+
+**Soft Filter Pruning for Accelerating Deep Convolutional Neural Networks**
+
+- intro: IJCAI 2018
+- arxiv: [https://arxiv.org/abs/1808.06866](https://arxiv.org/abs/1808.06866)
+- github: [https://github.com/he-y/soft-filter-pruning](https://github.com/he-y/soft-filter-pruning)
+
+**Progressive Deep Neural Networks Acceleration via Soft Filter Pruning**
+
+[https://arxiv.org/abs/1808.07471](https://arxiv.org/abs/1808.07471)
+
+**Pruning neural networks: is it time to nip it in the bud?**
+
+[https://arxiv.org/abs/1810.04622](https://arxiv.org/abs/1810.04622)
+
+**Rethinking the Value of Network Pruning**
+
+[https://arxiv.org/abs/1810.05270](https://arxiv.org/abs/1810.05270)
+
+**Dynamic Channel Pruning: Feature Boosting and Suppression**
+
+[https://arxiv.org/abs/1810.05331](https://arxiv.org/abs/1810.05331)
+
+**Interpretable Convolutional Filter Pruning**
+
+[https://arxiv.org/abs/1810.07322](https://arxiv.org/abs/1810.07322)
+
+**Progressive Weight Pruning of Deep Neural Networks using ADMM**
+
+[https://arxiv.org/abs/1810.07378](https://arxiv.org/abs/1810.07378)
+
+**Pruning Deep Neural Networks using Partial Least Squares**
+
+- arxiv: [https://arxiv.org/abs/1810.07610](https://arxiv.org/abs/1810.07610)
+- github: [https://github.com/arturjordao/PruningNeuralNetworks](https://github.com/arturjordao/PruningNeuralNetworks)
+
+**Hybrid Pruning: Thinner Sparse Networks for Fast Inference on Edge Devices**
+
+[https://arxiv.org/abs/1811.00482](https://arxiv.org/abs/1811.00482)
+
+**Discrimination-aware Channel Pruning for Deep Neural Networks**
+
+- intro: NIPS 2018
+- arxiv: [https://arxiv.org/abs/1810.11809](https://arxiv.org/abs/1810.11809)
+
+**Stability Based Filter Pruning for Accelerating Deep CNNs**
+
+- intro: WACV 2019
+- arxiv: [https://arxiv.org/abs/1811.08321](https://arxiv.org/abs/1811.08321)
+
+**Structured Pruning for Efficient ConvNets via Incremental Regularization**
+
+- intro: NIPS 2018 workshop on "Compact Deep Neural Network Representation with Industrial Applications"
+- arxiv: [https://arxiv.org/abs/1811.08390](https://arxiv.org/abs/1811.08390)
+
+**Graph-Adaptive Pruning for Efficient Inference of Convolutional Neural Networks**
+
+[https://arxiv.org/abs/1811.08589](https://arxiv.org/abs/1811.08589)
+
+# Low-Precision Networks
+
+**Accelerating Deep Convolutional Networks using low-precision and sparsity**
+
+- intro: Intel Labs
+- arxiv: [https://arxiv.org/abs/1610.00324](https://arxiv.org/abs/1610.00324)
+
+**Deep Learning with Low Precision by Half-wave Gaussian Quantization**
+
+- intro: HWGQ-Net
+- arxiv: [https://arxiv.org/abs/1702.00953](https://arxiv.org/abs/1702.00953)
+
+**Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
+
+- intro: ICLR 2017
+- arxiv: [https://arxiv.org/abs/1702.03044](https://arxiv.org/abs/1702.03044)
+- openreview: [https://openreview.net/forum?id=HyQJ-mclg&noteId=HyQJ-mclg](https://openreview.net/forum?id=HyQJ-mclg&noteId=HyQJ-mclg)
+
+**ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks**
+
+- arxiv: [https://arxiv.org/abs/1706.02393](https://arxiv.org/abs/1706.02393)
+- github: [https://github.com/gudovskiy/ShiftCNN](https://github.com/gudovskiy/ShiftCNN)
+
+**Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM**
+
+- intro: Alibaba Group
+- keywords: alternating direction method of multipliers (ADMM)
+- arxiv: [https://arxiv.org/abs/1707.09870](https://arxiv.org/abs/1707.09870)
+
+**Learning Accurate Low-Bit Deep Neural Networks with Stochastic Quantization**
+
+- intro: BMVC 2017 Oral
+- arxiv: [https://arxiv.org/abs/1708.01001](https://arxiv.org/abs/1708.01001)
+
+**Compressing Low Precision Deep Neural Networks Using Sparsity-Induced Regularization in Ternary Networks**
+
+- intro: ICONIP 2017
+- arxiv: [https://arxiv.org/abs/1709.06262](https://arxiv.org/abs/1709.06262)
+
+**Learning Low Precision Deep Neural Networks through Regularization**
+
+[https://arxiv.org/abs/1809.00095](https://arxiv.org/abs/1809.00095)
+
+**Discovering Low-Precision Networks Close to Full-Precision Networks for Efficient Embedded Inference**
+
+[https://arxiv.org/abs/1809.04191](https://arxiv.org/abs/1809.04191)
+
 # Quantized Neural Networks
 
 **Quantized Convolutional Neural Networks for Mobile Devices**
@@ -500,8 +657,40 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 **Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference**
 
-- intro: Google
+- intro: CVPR 2018. Google
 - arxiv: [https://arxiv.org/abs/1712.05877](https://arxiv.org/abs/1712.05877)
+
+**Deep Neural Network Compression with Single and Multiple Level Quantization**
+
+- intro: AAAI 2018. Shanghai Jiao Tong University & University of Chinese Academy of Sciences
+- arxiv: [https://arxiv.org/abs/1803.03289](https://arxiv.org/abs/1803.03289)
+
+**Quantizing deep convolutional networks for efficient inference: A whitepaper**
+
+- intro: Google
+- arxiv: [https://arxiv.org/abs/1806.08342](https://arxiv.org/abs/1806.08342)
+
+**CascadeCNN: Pushing the Performance Limits of Quantisation in Convolutional Neural Networks**
+
+- intro: 28th International Conference on Field Programmable Logic & Applications (FPL), 2018
+- arxiv: [https://arxiv.org/abs/1807.05053](https://arxiv.org/abs/1807.05053)
+
+**Bridging the Accuracy Gap for 2-bit Quantized Neural Networks (QNN)**
+
+- intro: IBM Research AI
+- arxiv: [https://arxiv.org/abs/1807.06964](https://arxiv.org/abs/1807.06964)
+
+**Joint Training of Low-Precision Neural Network with Quantization Interval Parameters**
+
+[https://arxiv.org/abs/1808.05779](https://arxiv.org/abs/1808.05779)
+
+**Differentiable Fine-grained Quantization for Deep Neural Network Compression**
+
+[https://arxiv.org/abs/1810.10351](https://arxiv.org/abs/1810.10351)
+
+**HAQ: Hardware-Aware Automated Quantization**
+
+[https://arxiv.org/abs/1811.08886](https://arxiv.org/abs/1811.08886)
 
 # Binary Convolutional Neural Networks / Binarized Neural Networks
 
@@ -553,6 +742,38 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 - intro: Singapore University of Technology and Design
 - arxiv: [https://arxiv.org/abs/1712.02956](https://arxiv.org/abs/1712.02956)
 
+**Build a Compact Binary Neural Network through Bit-level Sensitivity and Data Pruning**
+
+[https://arxiv.org/abs/1802.00904](https://arxiv.org/abs/1802.00904)
+
+**From Hashing to CNNs: Training BinaryWeight Networks via Hashing**
+
+[https://arxiv.org/abs/1802.02733](https://arxiv.org/abs/1802.02733)
+
+**Energy Efficient Hadamard Neural Networks**
+
+- keywords: Binary Weight and Hadamard-transformed Image Network (BWHIN), Binary Weight Network (BWN), Hadamard-transformed Image Network (HIN)
+- arxiv: [https://arxiv.org/abs/1805.05421](https://arxiv.org/abs/1805.05421)
+
+**Bi-Real Net: Enhancing the Performance of 1-bit CNNs With Improved Representational Capability and Advanced Training Algorithm**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1808.00278](https://arxiv.org/abs/1808.00278)
+
+**Training Compact Neural Networks with Binary Weights and Low Precision Activations**
+
+[https://arxiv.org/abs/1808.02631](https://arxiv.org/abs/1808.02631)
+
+**Training wide residual networks for deployment using a single bit for each weight**
+
+- intro: ICLR 2018
+- arxiv: [https://arxiv.org/abs/1802.08530](https://arxiv.org/abs/1802.08530)
+- github(official, PyTorch): [https://github.com/szagoruyko/binary-wide-resnet](https://github.com/szagoruyko/binary-wide-resnet)
+
+**Composite Binary Decomposition Networks**
+
+[https://arxiv.org/abs/1811.06668](https://arxiv.org/abs/1811.06668)
+
 # Accelerating / Fast Algorithms
 
 **Fast Algorithms for Convolutional Neural Networks**
@@ -603,6 +824,48 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 - intro: AAAI 2018
 - arxiv: [https://arxiv.org/abs/1712.07493](https://arxiv.org/abs/1712.07493)
 
+**SBNet: Sparse Blocks Network for Fast Inference**
+
+- intro: Uber
+- project page: [https://eng.uber.com/sbnet/](https://eng.uber.com/sbnet/)
+- arxiv: [https://arxiv.org/abs/1801.02108](https://arxiv.org/abs/1801.02108)
+- github: [https://github.com/uber/sbnet](https://github.com/uber/sbnet)
+
+**Accelerating deep neural networks with tensor decompositions**
+
+- blog: [https://jacobgil.github.io/deeplearning/tensor-decompositions-deep-learning](https://jacobgil.github.io/deeplearning/tensor-decompositions-deep-learning)
+- github: [https://github.com/jacobgil/pytorch-tensor-decompositions](https://github.com/jacobgil/pytorch-tensor-decompositions)
+
+**A Survey on Acceleration of Deep Convolutional Neural Networks**
+
+[https://arxiv.org/abs/1802.00939](https://arxiv.org/abs/1802.00939)
+
+**Recurrent Residual Module for Fast Inference in Videos**
+
+- intro: CVPR 2018
+- arxiv: [https://arxiv.org/abs/1802.09723](https://arxiv.org/abs/1802.09723)
+
+**Co-Design of Deep Neural Nets and Neural Net Accelerators for Embedded Vision Applications**
+
+- intro: UC Berkeley & Samsung Research
+- arxiv: [https://arxiv.org/abs/1804.10642](https://arxiv.org/abs/1804.10642)
+
+**Towards Efficient Convolutional Neural Network for Domain-Specific Applications on FPGA**
+
+[https://arxiv.org/abs/1809.03318](https://arxiv.org/abs/1809.03318)
+
+**Accelerating Deep Neural Networks with Spatial Bottleneck Modules**
+
+[https://arxiv.org/abs/1809.02601](https://arxiv.org/abs/1809.02601)
+
+**FPGA Implementation of Convolutional Neural Networks with Fixed-Point Calculations**
+
+[https://arxiv.org/abs/1808.09945](https://arxiv.org/abs/1808.09945)
+
+**Extended Bit-Plane Compression for Convolutional Neural Network Accelerators**
+
+[https://arxiv.org/abs/1810.03979](https://arxiv.org/abs/1810.03979)
+
 # Knowledge Distilling / Knowledge Transfer
 
 **Distilling the Knowledge in a Neural Network**
@@ -622,6 +885,7 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 
 - intro: TuSimple
 - arxiv: [https://arxiv.org/abs/1707.01219](https://arxiv.org/abs/1707.01219)
+- github: [https://github.com/TuSimple/neuron-selectivity-transfer](https://github.com/TuSimple/neuron-selectivity-transfer)
 
 **Learning Loss for Knowledge Distillation with Conditional Adversarial Networks**
 
@@ -642,6 +906,30 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 **model_compression: Implementation of model compression with knowledge distilling method**
 
 - github: [https://github.com/chengshengchan/model_compression](https://github.com/chengshengchan/model_compression)
+
+**Neural Network Distiller**
+
+- intro: Neural Network Distiller: a Python package for neural network compression research
+- project page: [https://nervanasystems.github.io/distiller/](https://nervanasystems.github.io/distiller/)
+- github: [https://github.com/NervanaSystems/distiller](https://github.com/NervanaSystems/distiller)
+
+**Knowledge Distillation in Generations: More Tolerant Teachers Educate Better Students**
+
+- intro: The Johns Hopkins University
+- arxiv: [https://arxiv.org/abs/1805.05551](https://arxiv.org/abs/1805.05551)
+
+**Improving Knowledge Distillation with Supporting Adversarial Samples**
+
+[https://arxiv.org/abs/1805.05532](https://arxiv.org/abs/1805.05532)
+
+**Recurrent knowledge distillation**
+
+- intro: ICIP 2018
+- arxiv: [https://arxiv.org/abs/1805.07170](https://arxiv.org/abs/1805.07170)
+
+**Knowledge Distillation by On-the-Fly Native Ensemble**
+
+[https://arxiv.org/abs/1806.04606](https://arxiv.org/abs/1806.04606)
 
 # Code Optimization
 
@@ -725,6 +1013,10 @@ at INT8 deep learning operations than other FPGA DSP architectures"
 **Compressing and regularizing deep neural networks**
 
 [https://www.oreilly.com/ideas/compressing-and-regularizing-deep-neural-networks](https://www.oreilly.com/ideas/compressing-and-regularizing-deep-neural-networks)
+
+**How fast is my model?**
+
+[http://machinethink.net/blog/how-fast-is-my-model/](http://machinethink.net/blog/how-fast-is-my-model/)
 
 # Talks / Videos
 

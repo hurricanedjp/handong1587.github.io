@@ -104,12 +104,21 @@ Auto-encoder
 - intro: Arts et Métiers ParisTech
 - arxiv: [https://arxiv.org/abs/1707.01700](https://arxiv.org/abs/1707.01700)
 
+**Supervised Convolutional Sparse Coding**
+
+[https://arxiv.org/abs/1804.02678](https://arxiv.org/abs/1804.02678)
+
 ## Clustering
 
 **Deep clustering: Discriminative embeddings for segmentation and separation**
 
 - arxiv: [https://arxiv.org/abs/1508.04306](https://arxiv.org/abs/1508.04306)
 - github(Keras): [https://github.com/jcsilva/deep-clustering](https://github.com/jcsilva/deep-clustering)
+
+**Neural network-based clustering using pairwise constraints**
+
+- intro: ICLR 2016
+- arxiv: [https://arxiv.org/abs/1511.06321](https://arxiv.org/abs/1511.06321)
 
 **Unsupervised Deep Embedding for Clustering Analysis**
 
@@ -149,6 +158,46 @@ Auto-encoder
 
 - intro: NIPS 2017
 - arxiv: [https://arxiv.org/abs/1709.02508](https://arxiv.org/abs/1709.02508)
+
+**SpectralNet: Spectral Clustering using Deep Neural Networks**
+
+- arxiv: [https://arxiv.org/abs/1801.01587](https://arxiv.org/abs/1801.01587)
+- github: [https://github.com//kstant0725/SpectralNet](https://github.com//kstant0725/SpectralNet)
+
+**Clustering with Deep Learning: Taxonomy and New Methods**
+
+- intro: Technical University of Munich
+- arxiv: [https://arxiv.org/abs/1801.07648](https://arxiv.org/abs/1801.07648)
+- github: [https://github.com/elieJalbout/Clustering-with-Deep-learning](https://github.com/elieJalbout/Clustering-with-Deep-learning)
+
+**Deep Continuous Clustering**
+
+- arxiv: [https://arxiv.org/abs/1803.01449](https://arxiv.org/abs/1803.01449)
+- github: [https://github.com/shahsohil/DCC](https://github.com/shahsohil/DCC)
+
+**Learning to Cluster**
+
+- openreview: [https://openreview.net/forum?id=HkWTqLsIz](https://openreview.net/forum?id=HkWTqLsIz)
+- github: [https://github.com/kutoga/learning2cluster](https://github.com/kutoga/learning2cluster)
+
+**Learning Neural Models for End-to-End Clustering**
+
+- intro: ANNPR
+- arxiv: [https://arxiv.org/abs/1807.04001](https://arxiv.org/abs/1807.04001)
+
+**Deep Clustering for Unsupervised Learning of Visual Features**
+
+- intro: ECCV 2018
+- arxiv: [https://arxiv.org/abs/1807.05520](https://arxiv.org/abs/1807.05520)
+
+**Improving Image Clustering With Multiple Pretrained CNN Feature Extractors**
+
+- intro: Poster presentation at BMVC 2018
+- arxiv: [https://arxiv.org/abs/1807.07760](https://arxiv.org/abs/1807.07760)
+
+**Deep clustering: On the link between discriminative models and K-means**
+
+[https://arxiv.org/abs/1810.04246](https://arxiv.org/abs/1810.04246)
 
 # Auto-encoder
 
@@ -274,6 +323,32 @@ testing it on the MNIST handwritten digits data.
 - keywords: Deep Matching Autoencoders (DMAE)
 - arxiv: [https://arxiv.org/abs/1711.06047](https://arxiv.org/abs/1711.06047)
 
+**Understanding Autoencoders with Information Theoretic Concepts**
+
+- intro: University of Florida
+- arxiv: [https://arxiv.org/abs/1804.00057](https://arxiv.org/abs/1804.00057)
+
+**Hyperspherical Variational Auto-Encoders**
+
+- intro: University of Amsterdam
+- project page: [https://nicola-decao.github.io/s-vae/](https://nicola-decao.github.io/s-vae/)
+- arxiv: [https://arxiv.org/abs/1804.00891](https://arxiv.org/abs/1804.00891)
+- github: [https://github.com/nicola-decao/s-vae](https://github.com/nicola-decao/s-vae)
+
+**Spatial Frequency Loss for Learning Convolutional Autoencoders**
+
+[https://arxiv.org/abs/1806.02336](https://arxiv.org/abs/1806.02336)
+
+**DAQN: Deep Auto-encoder and Q-Network**
+
+[https://arxiv.org/abs/1806.00630](https://arxiv.org/abs/1806.00630)
+
+**Understanding and Improving Interpolation in Autoencoders via an Adversarial Regularizer**
+
+- intro: Google Brain
+- arxiv: [https://arxiv.org/abs/1807.07543](https://arxiv.org/abs/1807.07543)
+- github: [https://github.com/brain-research/acai](https://github.com/brain-research/acai)
+
 # RBM (Restricted Boltzmann Machine)
 
 ## Papers
@@ -287,6 +362,10 @@ testing it on the MNIST handwritten digits data.
 
 - arxiv: [https://arxiv.org/abs/1701.04831](https://arxiv.org/abs/1701.04831)
 - github: [https://github.com/yzcj105/rbm2mps](https://github.com/yzcj105/rbm2mps)
+
+**Matrix Product Operator Restricted Boltzmann Machines**
+
+[https://arxiv.org/abs/1811.04608](https://arxiv.org/abs/1811.04608)
 
 ## Blogs
 

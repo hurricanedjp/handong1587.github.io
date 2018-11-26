@@ -55,6 +55,12 @@ date: 2015-07-01
 
 [https://www.edx.org/course/algorithms-iitbombayx-cs213-3x](https://www.edx.org/course/algorithms-iitbombayx-cs213-3x)
 
+**(Coursera) Master Algorithmic Programming Techniques**
+
+- intro: Learn algorithms through programming and advance your software engineering or data science career
+- intro: Algorithmic Toolbox, Data Structures, Algorithms on Graphs, Algorithms on Strings, Advanced Algorithms and Complexity, Genome Assembly Programming Challenge
+- course-page: [https://www.coursera.org/specializations/data-structures-algorithms](https://www.coursera.org/specializations/data-structures-algorithms)
+
 # Papers
 
 **The JPS Pathfinding System**
@@ -134,6 +140,11 @@ It currently hosts (a) the team notebook, and (b) complete lecture slides for [C
 **Data Structures Related to Machine Learning Algorithms**
 
 [https://dzone.com/articles/data-structures-related-to-machine-learning-algori](https://dzone.com/articles/data-structures-related-to-machine-learning-algori)
+
+**Using Self-Organizing Maps to solve the Traveling Salesman Problem**
+
+- blog: [https://diego.codes/post/som-tsp/](https://diego.codes/post/som-tsp/)
+- github: [https://github.com/DiegoVicen/som-tsp](https://github.com/DiegoVicen/som-tsp)
 
 ## Visualization
 

@@ -14,6 +14,12 @@ date: 2015-10-09
 - intro: From Wikipedia, the free encyclopedia
 - blog: [https://www.wikiwand.com/en/Deep_learning](https://www.wikiwand.com/en/Deep_learning)
 
+**Toward Theoretical Understanding of Deep Learning**
+
+- intro: ICML 2018 Tutorial. by Sanjeev Arora, Princeton University
+- slides: [https://www.dropbox.com/s/qonozmne0x4x2r3/deepsurveyICML18final.pptx?dl=0](https://www.dropbox.com/s/qonozmne0x4x2r3/deepsurveyICML18final.pptx?dl=0)
+- mirror: [https://pan.baidu.com/s/1r_lz6rMoSIinvfovMFFbug](https://pan.baidu.com/s/1r_lz6rMoSIinvfovMFFbug)
+
 **VGG Convolutional Neural Networks Practical**
 
 ![](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/images/cover.png)
@@ -556,6 +562,15 @@ Machine learning workflow, Extracting feaures from images (colours, edges, corne
 
 [https://machinelearningmastery.com/exploding-gradients-in-neural-networks/](https://machinelearningmastery.com/exploding-gradients-in-neural-networks/)
 
+**Only Numpy: (Why I do Manual Back Propagation) Implementing Multi Channel/Layer Convolution Neural Network on Numpy with Interactive Code**
+
+[https://medium.com/swlh/only-numpy-why-i-do-manual-back-propagation-implementing-multi-channel-layer-convolution-neural-7d83242fcc24](https://medium.com/swlh/only-numpy-why-i-do-manual-back-propagation-implementing-multi-channel-layer-convolution-neural-7d83242fcc24)
+
+**92.45% on CIFAR-10 in Torch**
+
+- intro: Dropout after Convolution
+- blog: [http://torch.ch/blog/2015/07/30/cifar.html](http://torch.ch/blog/2015/07/30/cifar.html)
+
 # Convolution
 
 **Understanding Convolutions**
@@ -1070,3 +1085,12 @@ Implementations and ideas are largely based on papers from arxiv and implementat
 **Convolutional Neural Network for Traffic Sign Classification — CarND**
 
 - blog: [https://medium.com/@gruby/convolutional-neural-network-for-traffic-sign-classification-carnd-e46e95453899#.lfutfs21v](https://medium.com/@gruby/convolutional-neural-network-for-traffic-sign-classification-carnd-e46e95453899#.lfutfs21v)
+
+# Talks
+
+**A Tour of Deep Learning With C++**
+
+- intro: CppCon 2017, Peter Goldsborough
+- youtube: [https://www.youtube.com/watch?v=9-1lcss0NMg](https://www.youtube.com/watch?v=9-1lcss0NMg)
+- bilibili: [https://www.bilibili.com/video/av20675156/](https://www.bilibili.com/video/av20675156/)
+

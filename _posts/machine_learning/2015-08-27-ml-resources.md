@@ -179,6 +179,11 @@ for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark,
 - intro: Master thesis
 - thesis page: [https://brage.bibsys.no/xmlui/handle/11250/2433761](https://brage.bibsys.no/xmlui/handle/11250/2433761)
 
+**XGBoost: Scalable GPU Accelerated Learning**
+
+- intro: describe the multi-GPU gradient boosting algorithm implemented in the XGBoost library
+- arxiv: [https://arxiv.org/abs/1806.11248](https://arxiv.org/abs/1806.11248)
+
 ## LightGBM
 
 **LightGBM, Light Gradient Boosting Machine**
@@ -272,6 +277,11 @@ based on decision tree algorithms, used for ranking, classification and many oth
 
 - intro: Heidelberg University
 - arxiv: [https://arxiv.org/abs/1712.02743](https://arxiv.org/abs/1712.02743)
+
+**Extremely Fast Decision Tree**
+
+- arxiv: [https://arxiv.org/abs/1802.08780](https://arxiv.org/abs/1802.08780)
+- github: [https://github.com/chaitanya-m/kdd2018](https://github.com/chaitanya-m/kdd2018)
 
 # Generative Models
 
@@ -713,6 +723,11 @@ Classic strategies:
 - intro: CVPR 2012. KISSME
 - paper: [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.384.2335&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.384.2335&rep=rep1&type=pdf)
 
+**Large Scale Strongly Supervised Ensemble Metric Learning, with Applications to Face Verification and Retrieval**
+
+- intro: NEC Laboratories America
+- arxiv: [https://arxiv.org/abs/1212.6094](https://arxiv.org/abs/1212.6094)
+
 # Finance and Trading
 
 **Efficient Portfolio optimisation by Hybridised Machine Learning**
@@ -1028,7 +1043,7 @@ AUC: Area Under the Curve
 - blog: [http://distill.pub/2016/misread-tsne/](http://distill.pub/2016/misread-tsne/)
 - github: [https://github.com/distillpub/post--misread-tsne](https://github.com/distillpub/post--misread-tsne)
 
-# Machine Learning Libraries
+# Libraries
 
 **LambdaNet: Purely functional artificial neural network library implemented in Haskell**
 
@@ -1153,7 +1168,13 @@ for creating complex software in C++ to solve real world problems.
 
 **ml.js - Machine learning tools in JavaScript**
 
-[https://github.com//mljs/ml](https://github.com//mljs/ml)
+[https://github.com/mljs/ml](https://github.com/mljs/ml)
+
+**Propel**
+
+- intro: A Machine Learning Framework for JavaScript / Differential Programming in JavaScript
+- homepage: [http://propelml.org/](http://propelml.org/)
+- github: [https://github.com/propelml/propel](https://github.com/propelml/propel)
 
 # Resources
 

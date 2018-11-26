@@ -153,6 +153,30 @@ joint classification, detection and semantic segmentation via a unified architec
 
 [https://arxiv.org/abs/1709.04821](https://arxiv.org/abs/1709.04821)
 
+**CFENet: An Accurate and Efficient Single-Shot Object Detector for Autonomous Driving**
+
+- intro: CVPR 2018 Workshop of Autonomous Driving (WAD)
+- arxiv: [https://arxiv.org/abs/1806.09790](https://arxiv.org/abs/1806.09790)
+
+**LaneNet: Real-Time Lane Detection Networks for Autonomous Driving**
+
+- intro: Duke University & Horizon Robotics, Inc.
+- arxiv: [https://arxiv.org/abs/1807.01726](https://arxiv.org/abs/1807.01726)
+
+**Learning End-to-end Autonomous Driving using Guided Auxiliary Supervision**
+
+[https://arxiv.org/abs/1808.10393](https://arxiv.org/abs/1808.10393)
+
+**Rethinking Self-driving: Multi-task Knowledge for Better Generalization and Accident Explanation Ability**
+
+- intro: Waseda University
+- arxiv: [https://arxiv.org/abs/1809.11100](https://arxiv.org/abs/1809.11100)
+- demo: [https://www.youtube.com/watch?v=N7ePnnZZwdE](https://www.youtube.com/watch?v=N7ePnnZZwdE)
+
+**Pixel and Feature Level Based Domain Adaption for Object Detection in Autonomous Driving**
+
+[https://arxiv.org/abs/1810.00345](https://arxiv.org/abs/1810.00345)
+
 # Projects
 
 **Caffe-Autopilot: Car autopilot software that uses C++, BVLC Caffe, OpenCV, and SFML**
@@ -211,6 +235,15 @@ without running into obstacles using a type of reinforcement learning called Q-L
 - arxiv: [https://arxiv.org/abs/1712.08644](https://arxiv.org/abs/1712.08644)
 - github: [https://github.com//heechul/picar](https://github.com//heechul/picar)
 
+**Autonomous Driving in Reality with Reinforcement Learning and Image Translation**
+
+- intro: Shanghai Jiao Tong University
+- arxiv: [https://arxiv.org/abs/1801.05299](https://arxiv.org/abs/1801.05299)
+
+**End-to-end Multi-Modal Multi-Task Vehicle Control for Self-Driving Cars with Visual Perception**
+
+[https://arxiv.org/abs/1801.06734](https://arxiv.org/abs/1801.06734)
+
 # Blogs
 
 **Self-driving cars: How far away are we REALLY from autonomous cars?(7 Aug 2015)**
@@ -255,7 +288,7 @@ without running into obstacles using a type of reinforcement learning called Q-L
 
 [https://www.technologyreview.com/s/602600/deep-driving/](https://www.technologyreview.com/s/602600/deep-driving/)
 
-**Visualizations for regressing wheel steering angles in self driving cars with Keras **
+**Visualizations for regressing wheel steering angles in self driving cars with Keras**
 
 - blog: [http://jacobcv.blogspot.jp/2016/10/visualizations-for-regressing-wheel.html](http://jacobcv.blogspot.jp/2016/10/visualizations-for-regressing-wheel.html)
 - github: [https://github.com/jacobgil/keras-steering-angle-visualizations](https://github.com/jacobgil/keras-steering-angle-visualizations)
